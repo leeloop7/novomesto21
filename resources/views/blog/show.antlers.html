@@ -1,9 +1,25 @@
-<h1 class="text-3xl bg-green-400 text-center text-green-900 font-bold mt-6 p-6">{{ title }}</h1>
-<div class="border text-center text-green-600 border-green-400 mt-8 p-3 text-xs uppercase">
-    Published on {{ date }} by {{ author:name }}
+<div class="max-w-5xl mx-auto">
+  {{ responsive:featured_image ratio="16/9"class="rounded-md shadow-xl" }}
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl text-center text-white font-bold mt-6 p-6">{{ title }}</h1>
+    <div class="text-center text-green-600 mt-2 p-3 text-xs uppercase">
+      Published on {{ date }} by {{ author:name }}
+    </div>
+    {{ intro }}
+    <article class="space-y-4 mt-8 text-sm text-gray-200 leading-loose text-justify">
+      {{ bard_field }}
+    </article>
+    <section class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+      {{ assets:gallery }}
+      {{ responsive:url ratio="16/9" class="glightbox rounded-md" data-gallery="gallery" }}
+      {{ /assets:gallery }}
+    </section>
+  </div>
 </div>
-<img src="{{ featured_image }}" class="border-2 border-green-400 p-1" alt="{{ featured_image:alt }}" />
 
-<article class="space-y-4 mt-8 text-sm text-green-400 leading-loose">
-    {{ content }}
-</article>
+{{ section:scripts }}
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script type="text/javascript">
+  const lightbox = GLightbox();
+</script>
+{{ /section:scripts }}

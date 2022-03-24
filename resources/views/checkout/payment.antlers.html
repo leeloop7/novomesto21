@@ -1,0 +1,5 @@
+{{ if {sc:cart:count} === 0 }}
+    {{ redirect to="/" }}
+{{ /if }}
+
+{{ sc:checkout:mollie redirect="{ link id='bc0c5a1e-7728-400f-bac5-18a0083b7eca' }" error_redirect="/" }}{{ /sc:checkout }}

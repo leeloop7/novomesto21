@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => null,
+    'default' => 'password',
 
     /*
     |--------------------------------------------------------------------------
@@ -43,7 +43,7 @@ return [
 
         'password' => [
             'driver' => 'password',
-            'allowed' => ['secret'],
+            'allowed' => ['NM21'],
             'form_url' => null,
         ],
 

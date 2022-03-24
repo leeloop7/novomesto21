@@ -1,0 +1,15 @@
+title: Products
+sites:
+  - default
+  - english
+propagate: false
+template: registration/show
+layout: layout
+revisions: false
+route:
+  default: '/prijave/{slug}'
+  english: '/registrations/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

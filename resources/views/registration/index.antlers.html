@@ -1,0 +1,10 @@
+<div class="max-w-7xl mx-auto py-8 px-8">
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-600 text-center">{{ title }}</h2>
+    <div class="mt-10 sm:mt-16 relative justify-center rounded-lg flex space-x-4">
+        {{ collection:products sort="order" }}
+        <a href="{{ url }}" class="rounded-lg shadow-sm bg-gray-800 hover:bg-gray-700 px-8 py-12 md:p-16 text-center">
+            <h2 class="text-base md:text-xl leading-6 font-medium text-white">{{ title }}</h2>
+        </a>
+        {{ /collection:products }}
+    </div>
+</div>

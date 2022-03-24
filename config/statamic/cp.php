@@ -38,7 +38,10 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
+        [
+            'type' => 'sales',
+            'width' => 50,
+        ],
     ],
 
     /*

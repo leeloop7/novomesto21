@@ -1,17 +1,32 @@
 <!doctype html>
 <html>
+
 <head>
-    <title>{{ title }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <title>{{ title }}</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+        href="{{ mix src='css/tailwind.css' }}">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
 </head>
-<body class="bg-gray-700 text-white text-lg font-mono">
-    <nav class="bg-black text-xs uppercase text-green text-center flex items-center justify-center space-x-4">
-        {{ nav from="pages" include_home="true" }}
-            <a href="{{ url }}" class="p-2 block hover:text-yellow-200">{{ title }}</a>
-        {{ /nav  }}
-    </nav>
-    <div class="container max-w-lg mx-auto py-8">
-        {{ template_content }}
-    </div>
+
+<body class="bg-gray-900 text-white text-lg font-body">
+  {{ partial:header2 }}
+
+  <div class="{{ if !segment_1 }} {{ else }} max-w-7xl py-8 container {{ /if }} mx-auto">
+    {{ template_content }}
+  </div>
+
+  {{ partial:footer }}
+  <script src="https://kit.fontawesome.com/ce34192311.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+          defer></script>
+  <script src="{{ mix src='js/site.js' }}"></script>
+  {{ yield:scripts }}
 </body>
+
 </html>

@@ -3,10 +3,17 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Statamic\Statamic;
 
 class AppServiceProvider extends ServiceProvider
 {
+
+    public $bindings = [
+        \DoubleThreeDigital\SimpleCommerce\Http\Controllers\CartItemController::class =>
+        \App\Http\Controllers\CartItemController::class,
+        \DoubleThreeDigital\SimpleCommerce\Http\Controllers\CartController::class =>
+        \App\Http\Controllers\CartController::class
+    ];
+
     /**
      * Register any application services.
      *
@@ -14,7 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
     }
 
     /**
@@ -24,7 +30,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Statamic::script('app', 'cp');
-        // Statamic::style('app', 'cp');
+        require_once(app_path("Helpers.php"));
     }
 }

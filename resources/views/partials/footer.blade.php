@@ -22,7 +22,7 @@
       </div>
       <div>
         <img class="mx-auto"
-             src="/img/zavod.png"
+             src="/img/novomesto.png"
              alt="">
       </div>
     </div>
@@ -67,7 +67,7 @@
       <div class="font-bold text-xl md:text-2xl text-gray-500">
         {{ trans("footer.partner") }}:
         <img class="mx-auto py-4"
-             src="/img/zavod.png"
+             src="/img/novomesto.png"
              alt="">
       </div>
     </div>

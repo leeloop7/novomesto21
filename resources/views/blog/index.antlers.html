@@ -3,7 +3,7 @@
   {{ content }}
 
   <section class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-12">
-    {{ collection:blog }}
+    {{ collection:blog  sort="date:desc" }}
     <a href="{{ url }}"
        class="group">
       {{ responsive:featured_image ratio="16/9" class="rounded-md opacity-75 group-hover:opacity-100 transition-all w-full bg-cover duration-300 mb-2" }}

@@ -1,7 +1,7 @@
 ---
 id: 43ae0d3e-1214-478c-a839-842ec12461ef
 blueprint: pages
-title: 'Zdravstveno varstvo'
+title: 'ZDRAVSTVENO VARSTVO'
 bard_field:
   -
     type: paragraph
@@ -64,6 +64,6 @@ template: page
 featured_image:
   - Novomeski_polmaraton_2021_Lo_res_018.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645002709
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648373296
 ---

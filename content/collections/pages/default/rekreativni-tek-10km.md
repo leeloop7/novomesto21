@@ -1,11 +1,11 @@
 ---
 id: a96dc164-f13b-4764-b5d6-8867b273e669
 blueprint: pages
-title: 'Rekreativni tek - 10km'
+title: 'Trasa Rekreativni tek - 10km'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645185012
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648367096
 code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1xnMhLamaMwz1_FsapbjzqufgoK-XEjZP&ehbc=2E312F" width="100%" height="500"></iframe>'
 bard_field:
   -

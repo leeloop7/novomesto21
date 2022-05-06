@@ -1,9 +1,9 @@
 ---
 id: 0dd257c3-af93-4e09-bd9a-3327f1c396c8
 blueprint: pages
-title: Galerija
+title: GALERIJA
 template: page
 redirect: /galerija/2021
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645004977
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648372435
 ---

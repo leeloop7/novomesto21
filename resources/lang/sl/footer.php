@@ -14,5 +14,6 @@ return [
     'rec_2' => 'Rekreativni tek - 6,5km',
     'rest' => 'Ostale aktivnosti',
     'contacts' => 'Kontaktni podatki',
-    'copy' => 'Vse pravice pridržane'
+    'copy' => 'Vse pravice pridržane',
+    'splosni' => 'Splošni pogoji'
 ];

@@ -134,6 +134,9 @@
             <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               {{ trans("footer.signup") }}
             </h6>
+            <a href="/o-maratonu/splosni-pogoji" class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+                {{ trans("footer.splosni") }}
+            </a>
             @foreach(tag("collection:products", ['sort' => 'order']) as $entry)
                 <p class="mb-4">
                     <a href="{{$entry->url()}}" class="text-gray-400">
@@ -229,6 +232,6 @@
     <div class="text-center p-6 bg-gray-950">
       <span>© 2022 {{ trans("footer.copy") }}:</span>
       <a class="text-gray-600 font-semibold"
-         href="https://fit-klub.com/">Fit Klub Novo mesto</a>
+         href="https://fit-klub.com/">Fit Klub Novo mesto</a>, <b>VAT:</b> SI 29347793, <b>Reg. number:</b> 2102986000
     </div>
   </footer>

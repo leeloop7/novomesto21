@@ -1,7 +1,7 @@
 ---
 id: 9b238459-3257-4d79-b347-a5055ab19769
 blueprint: pages
-title: 'Nagrade in denarne nagrade'
+title: NAGRADE
 bard_field:
   -
     type: paragraph
@@ -17,16 +17,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Prvih pet absolutno uvrščenih v moški in ženski kategoriji dobi pokale in praktične nagrade. V kategorijah prejmejo prvi trije uvrščeni tekmovalci kolajne in praktične nagrade. Vsi tekmovalci v polmaratonu prejmejo tudi spominsko medaljo.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: italic
-        text: 'DENARNE NAGRADE: Do denarne nagrade so upravičeni prvi trije tekmovalci/ke v ženski in moški kategoriji v kolikor je dosežen minimalni zahtevani čas (glej tabelo spodaj) in je nagrajeni tekmovalec/ka prebivalec Evropske unije, Švice, Bosne in Herzegovine, Srbije, Črne gore, Albanije, Norveške, Velike Britanije ter Makedonije in ki so sodelovali na svečani proglasitvi nagrad. Do denarne nagrade so opravičeni prvi trije tekmovalci, ki dosežejo čas, ki je hitrejši od 1h 15min 00sek v moški kategoriji in 1h 25min 00sek v ženski kategoriji. MALUS: V kolikor tekmovalec v absolutni konkurenci ne doseže časovne norme glede na uvrstitev, se mu pripada nagrada glede na doseženo normo. Npr. Če tekmovalka med ženskami zasede absolutno 2. mesto in teče 1:21:20 ji pripada nagrada 300 eur. Denarna nagrada (bruto znesek) se izplača najkasneje v 60 dneh po tekmovanju na osebni račun tekmovalca. Nagrajeni tekmovalci morajo najkasneje do 25. 10. 2021 organizatorju poslati davčno številko, popoln naslov bivališča ter številko osebnega računa IBAN in BIC.'
+        text: 'Prvih pet absolutno uvrščenih v moški in ženski kategoriji dobi pokale in praktične nagrade. V kategorijah prejmejo prvi trije uvrščeni tekmovalci kolajne in praktične nagrade. Vsi tekmovalci v polmaratonu prejmejo tudi spominsko medaljo.'
   -
     type: paragraph
     content:
@@ -220,7 +211,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 09min'
+                    text: '>1h 09min'
           -
             type: table_cell
             attrs:
@@ -248,7 +239,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 17min'
+                    text: '>1h 17min'
       -
         type: table_row
         content:
@@ -301,7 +292,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 10min'
+                    text: '>1h 10min'
           -
             type: table_cell
             attrs:
@@ -329,7 +320,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 19min'
+                    text: '>1h 19min'
       -
         type: table_row
         content:
@@ -382,7 +373,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 12min'
+                    text: '>1h 12min'
           -
             type: table_cell
             attrs:
@@ -410,7 +401,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 22min'
+                    text: '>1h 22min'
       -
         type: table_row
         content:
@@ -463,7 +454,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 13min'
+                    text: '>1h 13min'
           -
             type: table_cell
             attrs:
@@ -491,7 +482,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 23min'
+                    text: '>1h 23min'
       -
         type: table_row
         content:
@@ -544,7 +535,7 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 15min'
+                    text: '>1h 15min'
           -
             type: table_cell
             attrs:
@@ -572,7 +563,16 @@ bard_field:
                 content:
                   -
                     type: text
-                    text: '1h 25min'
+                    text: '>1h 25min'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: italic
+        text: 'DENARNE NAGRADE: Do denarne nagrade so upravičeni prvi trije tekmovalci/ke v ženski in moški kategoriji v kolikor je dosežen minimalni zahtevani čas (glej tabelo spodaj) in je nagrajeni tekmovalec/ka prebivalec Evropske unije, Švice, Bosne in Herzegovine, Srbije, Črne gore, Albanije, Norveške, Velike Britanije ter Makedonije in ki so sodelovali na svečani proglasitvi nagrad. Do denarne nagrade so opravičeni prvi trije tekmovalci, ki dosežejo čas, ki je hitrejši od 1h 15min 00sek v moški kategoriji in 1h 25min 00sek v ženski kategoriji. MALUS: V kolikor tekmovalec v absolutni konkurenci ne doseže časovne norme glede na uvrstitev, se mu pripada nagrada glede na doseženo normo. Npr. Če tekmovalka med ženskami zasede absolutno 2. mesto in teče 1:21:20 ji pripada nagrada 300 eur. Denarna nagrada (bruto znesek) se izplača najkasneje v 60 dneh po tekmovanju na osebni račun tekmovalca. Nagrajeni tekmovalci morajo najkasneje do 25. 10. 2021 organizatorju poslati davčno številko, popoln naslov bivališča ter številko osebnega računa IBAN in BIC.'
   -
     type: paragraph
     content:
@@ -587,7 +587,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Prvi trije uvrščeni tekmovalci in tekmovalke v absolutni kategoriji prejmejo pokale ter praktične nagrade, četrtouvrščeni in petouvrščeni pa praktične nagrade. Vsi tekmovalci prejmejo spominsko medaljo.'
+        text: 'Prvi trije uvrščeni tekmovalci in tekmovalke v absolutni kategoriji prejmejo pokale ter praktične nagrade, četrtouvrščeni in petouvrščeni pa praktične nagrade. Vsi tekmovalci prejmejo spominsko medaljo.'
   -
     type: paragraph
     content:
@@ -602,7 +602,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Prvi trije uvrščeni tekmovalci in tekmovalke v absolutni kategoriji prejmejo pokale ter praktične nagrade. Vsi tekmovalci prejmejo spominsko medaljo.'
+        text: 'Prvi trije uvrščeni tekmovalci in tekmovalke v absolutni kategoriji prejmejo pokale ter praktične nagrade. Vsi tekmovalci prejmejo spominsko medaljo.'
   -
     type: paragraph
     content:
@@ -617,11 +617,11 @@ bard_field:
     content:
       -
         type: text
-        text: 'Javna podelitev priznanj in nagrad za rekreativni tek in polmaraton v absolutni konkurenci in po kategorijah je ob 13:00 uri na Novem trgu. V absolutni kategoriji je podelitev za prvih pet absolutno uvrščenih v moški in ženski kategoriji. V tekmovalnih kategorijah pa za prve tri uvrščene v kategoriji.'
+        text: 'Javna podelitev priznanj in nagrad za rekreativni tek in polmaraton v absolutni konkurenci in po kategorijah je ob 13:00 uri na Novem trgu. V absolutni kategoriji je podelitev za prvih pet absolutno uvrščenih v moški in ženski kategoriji. V tekmovalnih kategorijah pa za prve tri uvrščene v kategoriji.'
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645003445
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648374368
 template: page
 featured_image:
-  - Novomeski_polmaraton_2021_Lo_res_076.JPG
+  - Novomeski_polmaraton_2021_Lo_res_003.JPG
 ---

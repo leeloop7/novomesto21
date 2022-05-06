@@ -1,28 +1,8 @@
 ---
 id: e00eae0f-a0e5-4090-8c4a-7d8d9a4cd47a
 blueprint: pages
-title: Program
+title: PROGRAM
 bard_field:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'DATUM: 1.10. in 2.10.2022'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'ORGANIZATOR: ŠRD FIT KLUB'
-  -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        text: PROGRAM
   -
     type: heading
     attrs:
@@ -161,7 +141,7 @@ bard_field:
 featured_image:
   - Novomeski_polmaraton_2021_Lo_res_024.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645001496
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648372005
 template: page
 ---

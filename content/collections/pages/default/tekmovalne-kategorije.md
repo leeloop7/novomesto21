@@ -1,16 +1,18 @@
 ---
 id: 056f373c-679f-4515-976d-208016959ca9
 blueprint: pages
-title: 'Tekmovalne kategorije'
+title: 'TEKMOVALNE KATEGORIJE'
 bard_field:
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
         text: 'POLMARATON (21.097 m) – štart ob 10.05:'
+  -
+    type: paragraph
   -
     type: paragraph
     content:
@@ -136,7 +138,7 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
@@ -150,7 +152,7 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
@@ -164,7 +166,7 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
@@ -190,6 +192,6 @@ template: page
 featured_image:
   - Novomeski_polmaraton_2021_Lo_res_039.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645002403
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648373246
 ---

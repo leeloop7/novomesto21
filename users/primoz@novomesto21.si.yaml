@@ -1,0 +1,17 @@
+name: Primož
+super: true
+id: 92c844c4-0b68-4e10-9f82-950d24236efc
+password_hash: $2y$10$iOBCCjMeV54JK9hrKEXI9OkTHkogV1m6GTcTaH9QtxGVN86THfCf2
+preferences:
+  assets:
+    assets:
+      mode: grid
+      per_page: 100
+  collections:
+    blog:
+      columns:
+        - date
+        - title
+        - author
+        - site
+        - slug

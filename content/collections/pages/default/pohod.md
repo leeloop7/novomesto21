@@ -1,18 +1,18 @@
 ---
 id: c6725a96-61e0-47d4-8c58-d047b0ae45f7
 blueprint: pages
-title: Pohod
+title: POHOD
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1646816474
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648370885
 bard_field:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'V sklopu 4. novomeškega ½ maratona  pripravljamo zanimiv popoldanski pohod, na katerem se bomo sprehodili po sprehajalnih poteh do gradu Grm. '
+        text: 'V sklopu 5. Novomeškega ½ maratona  pripravljamo zanimiv popoldanski pohod, na katerem se bomo sprehodili po okolici Novega mesta. Naši vodniki vsako leto pripravijo novo progo, ki vas popelje na najlepše in skrite kotičke Novega mesta.'
   -
     type: paragraph
     content:
@@ -24,7 +24,7 @@ bard_field:
         text: 'ŠTART POHODA:'
       -
         type: text
-        text: '  sobota 2.10.2020 ob 15:30 uri pri Pošti - Novi trg'
+        text: '  sobota 1.10.2022 ob 15:30 uri pri Pošti - Novi trg'
   -
     type: paragraph
     content:
@@ -86,27 +86,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Prijave na pohod so OBVEZNE! Prosim za prijave na strani novomesto21.si do 29. 9. 2021. Možno pa se bo prijaviti tudi na dan prireditve na štartu.'
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
-      -
-        type: text
-        text: 'ZDRAVSTVENO VARSTVO'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Tekmovanje bo potekalo v skladu z ukrepi za zajezitev širjenja bolezni Covid-19 veljavnimi na dan tekmovanja!  Obvezno je izpolnjevanje pogoja PCT. Uporaba zaščitne maske je obvezna pri gibanju in zadrževanju na odprtih javnih krajih oziroma prostorih, če ni mogoče zagotoviti medosebne razdalje najmanj 1,5 metra.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Pohod je nezahteven in je primeren za otroke in odrasle. Med potjo bomo imeli več krajših postankov za oglede in pitje. Daljši postanek bomo imeli za skromno malico iz nahrbtnika pri Grmskem gradu.'
+        text: 'Prijave na pohod so OBVEZNE! Prosim za prijave na strani novomesto21.si do 28. 9. 2022. Možno pa se bo prijaviti tudi na dan prireditve na štartu.'
   -
     type: paragraph
     content:
@@ -117,5 +97,5 @@ bard_field:
             type: bold
         text: 'Vodja pohoda: Majda Markovič'
 featured_image:
-  - jakasuln-0385.jpg
+  - jakasuln-0153.jpeg
 ---

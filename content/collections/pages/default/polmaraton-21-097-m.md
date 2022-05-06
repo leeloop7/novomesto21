@@ -1,11 +1,11 @@
 ---
 id: e3e43ec7-5706-4d4d-b352-6ed2a08f87cc
 blueprint: pages
-title: 'Polmaraton 21.097 m'
+title: 'Trasa Polmaraton 21.097 m'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645184940
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648367067
 code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1NPRmny3lAFGJyqLr-wCMu64p26hNYr8t&ehbc=2E312F" width="100%" height="500"></iframe>'
 bard_field:
   -
@@ -28,6 +28,6 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'OPOZORILO! Limit polmaratona je 3h. Tekači na 21.097 m, ki boste imeli na vmesnem času na 6,5 km slabši čas od 50 min bruto, boste preusmerjeni na progo 10 km teka.'
+        text: 'Limit polmaratona je 3h. Tekači na 21.097 m, ki boste imeli na vmesnem času na 6,5 km slabši čas od 50 min bruto, boste preusmerjeni na progo 10 km teka.'
 code_field_2: '<div class="embedly-responsive" style="background:#FFF; position: relative;padding-bottom: 78.2227%;height: 0;overflow: hidden;"><iframe class="embedly-embed" frameborder="0" scrolling="no" allowfullscreen src="https://cdn.embedly.com/widgets/media.html?src=https://www.relive.cc/view/vmqX1D4eVLv/widget?r=embed-site&url=https://www.relive.cc/view/vmqX1D4eVLv?r=embed-site&image=https://www.relive.cc/view/vmqX1D4eVLv/png?x-ref=embed-site&key=f1631a41cb254ca5b035dc5747a5bd75&type=text/html&schema=relive" width="1024" height="801" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></iframe></div>'
 ---

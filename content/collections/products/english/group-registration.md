@@ -24,6 +24,5 @@ product_variants:
       variant: Halfmarathon
       price: 2500
 updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645379153
-order: 2
+updated_at: 1651774868
 ---

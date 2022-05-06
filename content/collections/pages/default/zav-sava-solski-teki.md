@@ -1,7 +1,7 @@
 ---
 id: ffd9e0ab-51cd-4e18-a55f-5ddc54ea7f44
 blueprint: pages
-title: 'Zav. SAVA - Šolski teki'
+title: 'Zav. SAVA - ŠOLSKI TEKI'
 bard_field:
   -
     type: heading
@@ -24,7 +24,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'SOBOTA 2.10.2021'
+        text: 'SOBOTA 1.10.2022'
   -
     type: paragraph
     content:
@@ -33,7 +33,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: "ČASOVNICA \_- Časi štartov so okvirni. Zaradi večjega števila otrok in varnosti bo skupina\_Šolski tek DEČKI (3. in 4. razred); letniki 2013 in 2012 štartala v dveh skupinah."
+        text: "ČASOVNICA \_- Časi štartov so okvirni. "
   -
     type: paragraph
     content:
@@ -153,7 +153,7 @@ bard_field:
         text: 'spletni strani'
       -
         type: text
-        text: "\_najpozneje do 29.9.2021. V ceno prijavnine je vključen čip za enkratno uporabo. Prijavnino poravnate na podlagi\_plačilnega naloga, ki ga prejmete ob prijavi prek spletne strani na vaš e-mail (upoštevajte rok plačila).\_Prijava je sprejeta ko je plačilo prejeto. Vračilo štartnine ni možno.\_Možne so prijave na dan tekmovanja. Cena je 8 eur."
+        text: "\_najpozneje do 28.9.2022. V ceno prijavnine je vključen čip za enkratno uporabo. Vračilo štartnine ni možno.\_Možne so prijave na dan tekmovanja. Cena je 8 eur."
   -
     type: paragraph
     content:
@@ -239,7 +239,7 @@ bard_field:
                     marks:
                       -
                         type: bold
-                    text: 'TEKI do 29.9.2021'
+                    text: 'TEKI do 28.9.2022'
           -
             type: table_cell
             attrs:
@@ -323,39 +323,6 @@ bard_field:
           -
             type: bold
         text: 'veljavnimi na dan tekmovanja!'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'TRENUTNO VELJAVNI POGOJI ZA UDELEŽBO:'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "PCT - pogoj ni potreben za osebe, ki še niso dopolnile 18 let, če se prireditve udeležujejo skupaj z ožjimi družinskimi člani oziroma skrbniki, ki izpolnjujejo pogoje PCT.\_"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Za osebe, ki so dopolnile 12 let in še niso dopolnile 18 let, se kot pogoj PCT testiranja šteje tudi testiranje s testom HAG za samotestiranje, ki se izvaja enkrat tedensko v enakih presledkih.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'PRIREDITVE SE LAHKO UDELEŽIJO LE ZDRAVE OSEBE BREZ ZNAKOV PREHLADA IN OKUŽB, SLABEGA POČUTJA ALI POVIŠANE TELESNE TEMPERATURE. UDELEŽENCE PROSIMO, da so POZORNI NA VSAKE ZNAKE OKUŽBE DIHAL (npr. nahod, kihanje, kašlja- nje, bolečine v žrelu, mišicah, povišana temperatura...). Na cilju teka bo dežurala zdravniška služba.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Uporaba zaščitne maske je obvezna pri gibanju in zadrževanju na odprtih javnih krajih oziroma prostorih, če ni mogoče zagotoviti medosebne razdalje najmanj 1,5 metra. Udeleženci tekov lahko nastopijo brez maske.'
   -
     type: paragraph
     content:
@@ -457,11 +424,13 @@ bard_field:
     content:
       -
         type: text
-        text: 'Trasa proge poteka okoli Novega trga. Teče se v desno stran. Krog je dolg pribljižno 500m in je rahlo razgiban. Tekači, ki tečejo 1000m tečejo 2 kroga, 1500m 3 kroge. Tekači naj bodo v štartni coni vsaj 5 minut pred štartom.'
+        text: 'Trasa proge poteka okoli Novega trga. Teče se v desno stran. Krog je dolg pribljižno 500m in je rahlo razgiban. Tekači, ki tečejo 1000m tečejo 2 kroga, 1500m 3 kroge. Tekači naj bodo v štartni coni najmanj 5 minut pred štartom.'
+  -
+    type: paragraph
 template: page
 featured_image:
   - jakasuln-0798.jpg
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1646816992
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648372331
 ---

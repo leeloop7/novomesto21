@@ -1,7 +1,7 @@
 ---
 id: cc1c945e-4648-42ce-b612-4d869fcc78ec
 blueprint: pages
-title: 'Nordijska hoja'
+title: 'NORDIJSKA HOJA'
 bard_field:
   -
     type: paragraph
@@ -32,7 +32,7 @@ bard_field:
         text: 'ŠTART POHODA: '
       -
         type: text
-        text: 'Sobota 2.10.2021 ob 16:00'
+        text: 'Sobota 1.10.2022 ob 16:00'
   -
     type: paragraph
     content:
@@ -80,7 +80,7 @@ bard_field:
         text: PRIJAVE
       -
         type: text
-        text: ': Preko spletne strani do 29.9.2021. Na dan tekmovanja od 15:00 ure pri Pošti.'
+        text: ': Preko spletne strani do 28.9.2022. Na dan tekmovanja od 15:00 ure pri Pošti.'
   -
     type: paragraph
     content:
@@ -226,8 +226,8 @@ bard_field:
         type: hard_break
 template: page
 featured_image:
-  - Novomeski_polmaraton_2021_Lo_res_070.JPG
+  - YXNzZXRzL2pha2FzdWxuLTAzODUuanBn.webp
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645004386
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648371945
 ---

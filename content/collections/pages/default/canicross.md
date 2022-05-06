@@ -1,11 +1,11 @@
 ---
 id: 8c6de22e-787d-4c1b-b18b-ff2220b2fd59
 blueprint: pages
-title: Canicross
+title: CANICROSS
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1646816592
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648368540
 bard_field:
   -
     type: paragraph
@@ -94,7 +94,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Štart Canicrossa je leteč, zato da se večje število psov ne zadržuje na enem mestu. Dolžina teka je 2,5km. Trasa je razgibana in del trase poteka po asflatu del pa po makadamu oziroma gozdni poti. Vsak lastnik / vodnik psa je odgovoren za svoja in dejanja psa, ki ga vodi. Nagobčniki niso obvezni, so pa priporočljivi. Obvezna je uporaba povodca. Ovratnica ne sme biti zategovalna. Vsak lastnik pa je odgovoren za vzdrževanje čistoče za psom. Vsak vodnik psa je odgovoren za vedenje svojega psa. Psa ni dovoljeno nositi. Organizator ne odgovarja za nastale posledice med dogodkom. Udeležba na prireditvi je za psa in njegovega vodnika na lastno odgovornost.'
+        text: 'Štart Canicrossa je leteč, zato da se večje število psov ne zadržuje na enem mestu. Zbor ne prej kot 5 minut pred štartom. Dolžina teka je 2,5km. Trasa je razgibana in del trase poteka po asflatu del pa po makadamu oziroma gozdni poti. Vsak lastnik / vodnik psa je odgovoren za svoja in dejanja psa, ki ga vodi. Nagobčniki niso obvezni, so pa priporočljivi. Obvezna je uporaba povodca. Ovratnica ne sme biti zategovalna. Vsak lastnik pa je odgovoren za vzdrževanje čistoče za psom. Vsak vodnik psa je odgovoren za vedenje svojega psa. Psa ni dovoljeno nositi. Organizator ne odgovarja za nastale posledice med dogodkom. Udeležba na prireditvi je za psa in njegovega vodnika na lastno odgovornost.'
   -
     type: heading
     attrs:
@@ -185,13 +185,13 @@ bard_field:
     content:
       -
         type: text
-        text: "Prijave in plačila sprejemamo na spletni strani do\_"
+        text: "Prijave in plačila sprejemamo na spletni strani www.novomesto21.si do\_"
       -
         type: text
         marks:
           -
             type: bold
-        text: '28. 9. 2021'
+        text: '25. 9. 2022'
       -
         type: text
         text: .
@@ -200,13 +200,13 @@ bard_field:
     content:
       -
         type: text
-        text: 'Prijavnino lahko poravnate s kreditno kartico, preko PayPal računa ali na podlagi UPN plačilnega naloga najkasneje v roku dveh delovnih dni. Prijava je sprejeta, ko je plačana! Upoštevajte rok plačila!'
+        text: 'Prijavnino lahko poravnate s kreditno kartico, preko PayPal računa. Prijava je sprejeta, ko je plačana! Upoštevajte rok plačila!'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Prijava na dan tekmovanje je možna do 16:00 ure. V kolikor imate težave s plačilom se obrnite na'
+        text: 'Prijave na dan tekmovanja so možna najkasneje do 16:00 ure. V kolikor imate težave s plačilom se obrnite na'
       -
         type: text
         marks:
@@ -292,7 +292,7 @@ bard_field:
                     marks:
                       -
                         type: bold
-                    text: 'do 15.8.2021'
+                    text: 'do 15.8.2022'
           -
             type: table_cell
             attrs:
@@ -332,7 +332,7 @@ bard_field:
                     marks:
                       -
                         type: bold
-                    text: 'do 15.9.2021'
+                    text: 'do 15.9.2022'
           -
             type: table_cell
             attrs:
@@ -372,7 +372,7 @@ bard_field:
                     marks:
                       -
                         type: bold
-                    text: 'do 28.9.2021'
+                    text: 'do 25.9.2022'
           -
             type: table_cell
             attrs:
@@ -444,7 +444,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'DVIG ŠTARTNIH PAKETOV je možen le na dan prireditve od 14:00 -17:00 ure na Novem trgu, kjer so tudi prijave na Otroške teke!'
+        text: 'DVIG ŠTARTNIH PAKETOV je možen na dan prireditve od 14:00 -17:00 ure na Novem trgu, kjer so tudi prijave na Otroške teke!'
   -
     type: heading
     attrs:
@@ -612,15 +612,12 @@ bard_field:
         type: text
         text: "\_za uspešen in hiter tek."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: hard_break
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
       -
         type: text
         marks:

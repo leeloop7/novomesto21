@@ -1,11 +1,11 @@
 ---
 id: 3c27c7fb-4262-434b-8024-f15d50a280d7
 blueprint: pages
-title: 'Štartni paket'
+title: 'ŠTARTNI PAKET'
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1645000176
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1648372481
 bard_field:
   -
     type: paragraph

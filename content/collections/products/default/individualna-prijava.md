@@ -24,7 +24,7 @@ product_variants:
       variant: Polmaraton
       price: 2500
 updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1646672319
+updated_at: 1648285342
 order: 1
 group: false
 ---

@@ -28,7 +28,7 @@ return [
     'gdpr' => 'GDPR',
     'total' => 'Skupno',
     'summary' => 'Povzetek nakupa',
-    'pay' => 'Dokončaj in plačaj',
+    'pay' => 'Nadaljuj na plačilo',
     'error' => 'Prišlo je do napake!',
     'thank_you' => 'Hvala',
     'noted' => 'Vaša prijava je bila uspešna!',
@@ -48,5 +48,6 @@ return [
     'carrier' => 'Podatki o nosilcu prijave',
     'veterans' => 'DP Veteranov',
     'best_time_short' => 'Najboljši čas (:race)',
-    'confirm' => 'Zapri'
+    'confirm' => 'Zapri',
+    'finish_and_pay' => 'Zaključi in plačaj'
 ];

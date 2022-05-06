@@ -49,10 +49,14 @@ return [
     */
 
     'gateways' => [
-        \DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\MollieGateway::class => [
+        /* \DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\MollieGateway::class => [
             'key' => env('MOLLIE_KEY'),
             'profile' => env('MOLLIE_PROFILE'),
-        ]
+        ], */
+        \DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\StripeGateway::class => [
+            'key' => env('STRIPE_KEY'),
+            'secret' => env('STRIPE_SECRET'),
+        ],
     ],
 
     /*

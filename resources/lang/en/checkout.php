@@ -28,7 +28,7 @@ return [
     'gdpr' => 'GDPR',
     'total' => 'Total',
     'summary' => 'Order summary',
-    'pay' => 'Finalize & pay',
+    'pay' => 'Continue to payment',
     'error' => 'There were some errors with your submission!',
     'thank_you' => 'Thank you',
     'noted' => 'Your registration was successful!',
@@ -48,5 +48,6 @@ return [
     'carrier' => 'Registration holder info',
     'veterans' => 'Veteran NC',
     'best_time_short' => 'Best time (:race)',
-    'confirm' => 'Close'
+    'confirm' => 'Close',
+    'finish_and_pay' => 'Finish and pay'
 ];

@@ -52,7 +52,7 @@ class CustomerOrderPaid extends Notification
             ->greeting('Pozdravljeni!')
             ->line(__('Hvala za vašo prijavo! Račun plačila je dodan kot priloga.'))
             ->line(__('Če imate kakršnakoli vprašanja, stopite v kontakt.'))
-            ->salutation('Lep pozdrav')
+            ->salutation('Lep pozdrav, ekipa NM21')
             ->attachData(
                 $pdf->output(),
                 'racun.pdf',

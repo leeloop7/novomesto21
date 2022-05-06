@@ -147,7 +147,7 @@
               {{ trans("footer.currently") }}
             </h6>
             <p class="mb-4">
-              {{ trans("footer.halfmarathon") }}: <span class="font-bold text-gray-200">{{orders_count("Halfmarathon")}}</span>
+              {{ trans("footer.halfmarathon") }}: <span class="font-bold text-gray-200">{{orders_count("Polmaraton")}}</span>
             </p>
             <p class="mb-4">
               {{ trans("footer.rec_1") }}: <span class="font-bold text-gray-200">{{orders_count("10km")}}</span>

@@ -2,10 +2,10 @@
     <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm font-medium text-white sm:pl-4">
         <input type="text" name="competitors[{{ index }}][name]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
     </td>
-    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-gray-400">
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
         <input type="text" name="competitors[{{ index }}][surname]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
     </td>
-    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-gray-400">
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
         <select required name="competitors[{{ index }}][shirt_size]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
             <option value="xs">XS</option>
             <option value="s">S</option>
@@ -14,10 +14,10 @@
             <option value="xl">XL</option>
         </select>
     </td>
-    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-gray-400">
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
         <input type="text" name="competitors[{{ index }}][phone]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
     </td>
-    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-gray-400">
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
         <select required name="competitors[{{ index }}][birthyear]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
             {{ if items.0:variant:key == "6.5km" }}
                 {{ loop from="2011" to="1940" }}
@@ -34,7 +34,7 @@
             {{ /if }}
         </select>
     </td>
-    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-gray-400">
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
         <div class="space-y-1 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
             <div class="flex items-center">
               <input id="{{ index }}-male" name="competitors[{{ index }}][gender]" type="radio" value="male" checked class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300">
@@ -47,7 +47,7 @@
             </div>
           </div>
     </td>
-    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-gray-400">
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
         {{ if items.0:variant:key == "10km" }}
           <select required name="competitors[{{ index }}][best_time]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
             <option value="Do 45:00 minut">{{ trans:checkout.time_1 time='45:00' }}</option>
@@ -66,7 +66,7 @@
           </select>
         {{ /if }}
     </td>
-    <td class="min-w-[80px] whitespace-nowrap p-2.5 text-sm text-gray-400 sm:pr-4">
+    <td class="min-w-[80px] whitespace-nowrap p-2.5 text-sm text-white sm:pr-4">
         <input type='hidden' value='0' name='competitors[{{ index }}][dp_vet]'>
         <input type='checkbox' value='1' name='competitors[{{ index }}][dp_vet]' class="float-right focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
     </td>

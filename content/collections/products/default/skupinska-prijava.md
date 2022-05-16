@@ -1,5 +1,5 @@
 ---
-id: 8373c220-19f3-4452-b9d5-7f9a566bcd90
+id: 4d7ded77-50c9-46b8-b90d-5713051a57ac
 blueprint: product
 title: 'Skupinska prijava'
 product_variants:
@@ -23,8 +23,7 @@ product_variants:
       key: Polmaraton
       variant: Polmaraton
       price: 2500
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1648285353
-order: 2
 group: true
+updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
+updated_at: 1652692600
 ---

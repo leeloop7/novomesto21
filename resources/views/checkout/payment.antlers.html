@@ -20,10 +20,10 @@
             </div>
         {{ /sc:gateways }}
     </div>
-    <div class="w-full md:w-1/3 mb-4 md:mb-0">
+    <div class="w-full">
         <button type="submit"
             class="w-full bg-green-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">
-            {{ trans:checkout.finish_and_pay }}
+            {{ trans:checkout.finish_and_pay amount="{sc:cart:total}" }}
         </button>
     </div>
     {{ /sc:checkout }}

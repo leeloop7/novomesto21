@@ -1,6 +1,6 @@
 ---
-id: 3863a15e-8f62-4c1e-887a-bfcfc600eb99
-origin: 66e767a9-ee34-4dc4-8681-d09bb59f0cf5
+id: 64878a4a-9aa9-4099-ae4d-9e678e3a1524
+origin: 8924cf94-c478-4a9b-a053-073a97b9d8c8
 title: 'Individual registration'
 product_variants:
   variants:
@@ -24,5 +24,5 @@ product_variants:
       variant: Halfmarathon
       price: 2500
 updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1651774863
+updated_at: 1652692633
 ---

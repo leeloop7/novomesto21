@@ -6,142 +6,193 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
         marks:
           -
             type: bold
-        text: 'PETEK 30.9.2022 - Kulturni center Janez Trdina'
+        text: 'FRIDAY 30.9.2022 - Kulturni center Janez Trdina'
   -
     type: paragraph
     content:
       -
         type: text
-        text: '16:00 - 20:00 DVIG ŠTARTNIH PAKETOV v KC Janez Trdina'
+        marks:
+          -
+            type: bold
+        text: '16:00 - 20:00 - BIB PICK UP (21km,10km,6.5km) at Kulturni center Janez Trdina, Novi trg 5'
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
         marks:
           -
             type: bold
-        text: 'SOBOTA 1.10.2022 – Novi trg'
+        text: 'SATURDAY 1.10.2022 – Novi trg'
   -
     type: paragraph
     content:
       -
         type: text
-        text: '14:00 - DVIG ŠTARTNIH PAKETOV v KC Janez Trdina od 14:00 do 19:00 ure'
+        marks:
+          -
+            type: bold
+        text: '14:00 -19:00  - BIB PICK UP (21km,10km,6.5km) at Kulturni center Janez Trdina, Novi trg 5'
   -
     type: paragraph
     content:
       -
         type: text
-        text: '14:00 - 16:00 - DVIG ŠTEVILK OTROŠKI TEKI, CANICROSS - Novi trg'
+        marks:
+          -
+            type: bold
+        text: '14:00 - 16:00 - REGISTRATIONS & BIB PICK U KIDS RACES, CANICROSS, NORDIC WALKING - Novi trg'
   -
     type: paragraph
     content:
       -
         type: text
-        text: '15:20 - ŠTART POHODA'
+        marks:
+          -
+            type: bold
+        text: '15:20 - START OF THE HIKE'
   -
     type: paragraph
     content:
       -
         type: text
-        text: '15:30 - TEK MALČKOV S STARŠI'
+        marks:
+          -
+            type: bold
+        text: '15:30 - BABY RUN WITH PARENTS'
   -
     type: paragraph
     content:
       -
         type: text
+        marks:
+          -
+            type: bold
         text: '15:40 - TEK PREDŠOLSKI OTROCI'
   -
     type: paragraph
     content:
       -
         type: text
-        text: '15:50 - ŠTART NORDIJSKE HOJE'
+        marks:
+          -
+            type: bold
+        text: '15:50 -  NORDIC WALKING START'
   -
     type: paragraph
-    content:
-      -
-        type: text
-        text: '16:00 - ŠOLSKI TEKI 1. - 9. razred'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: '17:30 - CANICROSS - TEK S PSI'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "17:35\_-\_PODELITVE OTROŠKI TEKI"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "18:30 -\_OTVORITEV NOVOMEŠKEGA 1/2 MARATONA IN\_PREDSTAVITEV VABLJENIH TEKMOVALCEV"
-  -
-    type: heading
-    attrs:
-      level: 3
     content:
       -
         type: text
         marks:
           -
             type: bold
-        text: 'NEDELJA 2.10.2022 – Novi trg, Seidlova cesta,'
+        text: '16:00 - KIDS RACES '
   -
     type: paragraph
     content:
       -
         type: text
-        text: "07:30\_- DVIG ŠTARTNIH ŠTEVILK in štartnih paketov v KC Janez Trdina"
+        marks:
+          -
+            type: bold
+        text: '17:30 - CANICROSS - RUN WITH DOGS'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "10:05\_- ŠTART POLMARATON, 10km\_ter 6,5km"
+        marks:
+          -
+            type: bold
+        text: "17:35\_-\_MEDAL CEREMONY KIDS RACES"
   -
     type: paragraph
     content:
       -
         type: text
-        text: "10:20\_- CILJ\_najhitrejših na rekreativnem teku, prvi krog polmaratoncev in teka 10km"
+        marks:
+          -
+            type: bold
+        text: "18:30 -\_OFFICIAL OPENING OF NOVO MESTO 1/2 MARATHON and ELITE RUNNERS PRESENTATION"
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'SUNDAY 2.10.2022 – Novi trg, Seidlova cesta,'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "10:30 - CILJ\_najhitrejših na 10km teku"
+        marks:
+          -
+            type: bold
+        text: "07:30\_- BIB PICK UP (21km,10km,6.5km) at Kulturni center Janez Trdina, Novi trg 5"
   -
     type: paragraph
     content:
       -
         type: text
-        text: "11:10\_- CILJ\_prvih polmaratoncev"
+        marks:
+          -
+            type: bold
+        text: "10:05\_- START HALF MARATHON, 10KM\_and  6,5KM"
   -
     type: paragraph
     content:
       -
         type: text
-        text: "13:00\_- RAZGLASITEV NAJBOLJŠIH\_\_- rekreativni tek in polmaraton z zabavo na Novem trgu"
+        marks:
+          -
+            type: bold
+        text: "10:20\_- FINISH of 6.5km CITY RUN, first lap of 21km and 10km"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "10:30 - FINISH\_of the fastest 10km runners"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "11:10\_-  FINISH\_of the fastest 21km runners"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "13:00\_- MEDAL CEREMONY\_WITH PARTY at Novi trg"
 featured_image:
   - Novomeski_polmaraton_2021_Lo_res_024.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1648372005
+updated_at: 1652255029
 template: page
 ---

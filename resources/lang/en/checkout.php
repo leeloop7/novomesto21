@@ -51,5 +51,8 @@ return [
     'confirm' => 'Close',
     'finish_and_pay' => 'Finish and pay (:amount)',
     'Individualna prijava' => 'Individual registration',
-    'Skupinska prijava' => 'Group registration'
+    'Skupinska prijava' => 'Group registration',
+    '6.5km' => '6.5km',
+    '10km' => '10km',
+    'Polmaraton' => 'Halfmarathon'
 ];

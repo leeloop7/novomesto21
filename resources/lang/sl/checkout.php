@@ -51,5 +51,8 @@ return [
     'confirm' => 'Zapri',
     'finish_and_pay' => 'Zaključi in plačaj (:amount)',
     'Individualna prijava' => 'Individualna prijava',
-    'Skupinska prijava' => 'Skupinska prijava'
+    'Skupinska prijava' => 'Skupinska prijava',
+    '6.5km' => '6.5km',
+    '10km' => '10km',
+    'Polmaraton' => 'Polmaraton'
 ];

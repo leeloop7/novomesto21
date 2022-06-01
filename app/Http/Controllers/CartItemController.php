@@ -10,7 +10,6 @@ use DoubleThreeDigital\SimpleCommerce\Http\Requests\CartItem\DestroyRequest;
 use DoubleThreeDigital\SimpleCommerce\Http\Requests\CartItem\StoreRequest;
 use DoubleThreeDigital\SimpleCommerce\Http\Requests\CartItem\UpdateRequest;
 use DoubleThreeDigital\SimpleCommerce\Orders\Cart\Drivers\CartDriver;
-use DoubleThreeDigital\SimpleCommerce\Products\ProductType;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Statamic\Facades\Site;
@@ -21,7 +20,7 @@ class CartItemController extends BaseActionController
     use CartDriver;
 
     protected $reservedKeys = [
-        'product', 'quantity', 'variant', '_token', '_redirect', '_error_redirect', '_request',
+        'product', 'quantity', 'variant', '_token', '_params', '_redirect',
     ];
 
     public function store(StoreRequest $request)
@@ -29,7 +28,8 @@ class CartItemController extends BaseActionController
         $cart = $this->hasCart() ? $this->getCart() : $this->makeCart();
         $product = Product::find($request->product);
         $cart->clearLineItems();
-        $items = $cart->lineItems();
+
+        $items = $cart->has('items') ? $cart->get('items') : [];
 
         // Handle customer stuff..
         if ($request->has('customer')) {
@@ -43,66 +43,44 @@ class CartItemController extends BaseActionController
                 }
             } catch (CustomerNotFound $e) {
                 if (is_array($request->get('customer'))) {
-                    $customerData = [
+                    $customer = Customer::create([
+                        'name'  => isset($request->get('customer')['name']) ? $request->get('customer')['name'] : $request->get('customer')['email'],
+                        'email' => $request->get('customer')['email'],
                         'published' => true,
-                    ];
-
-                    if ($request->get('customer')['name']) {
-                        $customerData['name'] = $request->get('customer')['name'];
-                    }
-
-                    if ($request->get('customer')['first_name'] && $request->get('customer')['last_name']) {
-                        $customerData['first_name'] = $request->get('customer')['first_name'];
-                        $customerData['last_name'] = $request->get('customer')['last_name'];
-                    }
-
-                    $customer = Customer::make()
-                        ->email($request->get('customer')['email'])
-                        ->data($customerData);
-
-                    $customer->save();
+                    ], $this->guessSiteFromRequest()->handle());
                 } elseif (is_string($request->get('customer'))) {
                     $customer = Customer::find($request->get('customer'));
                 }
             }
 
-            $cart->customer($customer->id());
+            $cart->data([
+                'customer' => $customer->id,
+            ])->save();
         } elseif ($request->has('email')) {
             try {
                 $customer = Customer::findByEmail($request->get('email'));
             } catch (CustomerNotFound $e) {
-                $customerData = [
+                $customer = Customer::create([
+                    'name'  => $request->get('name') ?? $request->get('email'),
+                    'email' => $request->get('email'),
                     'published' => true,
-                ];
-
-                if ($request->get('name')) {
-                    $customerData['name'] = $request->get('name');
-                }
-
-                if ($request->get('first_name') && $request->get('last_name')) {
-                    $customerData['first_name'] = $request->get('first_name');
-                    $customerData['last_name'] = $request->get('last_name');
-                }
-
-                $customer = Customer::make()
-                    ->email($request->get('email'))
-                    ->data($customerData);
-
-                $customer->save();
+                ], $this->guessSiteFromRequest()->handle());
             }
 
-            $cart->customer($customer->id());
+            $cart->data([
+                'customer' => $customer->id,
+            ])->save();
         }
 
         // Ensure there's enough stock to fulfill the customer's quantity
-        if ($product->purchasableType() === ProductType::PRODUCT()) {
-            if ($product->stock() && $product->stock() !== null && $product->stock() < $request->quantity) {
+        if ($product->purchasableType() === 'product') {
+            if ($product->has('stock') && $product->get('stock') !== null && $product->get('stock') < $request->quantity) {
                 return $this->withErrors($request, __("There's not enough stock to fulfil the quantity you selected. Please try again later."));
             }
-        } elseif ($product->purchasableType() === ProductType::VARIANT()) {
+        } elseif ($product->purchasableType() === 'variants') {
             $variant = $product->variant($request->get('variant'));
 
-            if ($variant !== null && $variant->stock() !== null && $variant->stock() < $request->quantity) {
+            if ($variant !== null && $variant->stockCount() !== null && $variant->stockCount() < $request->quantity) {
                 return $this->withErrors($request, __("There's not enough stock to fulfil the quantity you selected. Please try again later."));
             }
         }
@@ -120,23 +98,23 @@ class CartItemController extends BaseActionController
 
             $hasPurchasedPrerequisiteProduct = $customer->orders()
                 ->filter(function ($order) {
-                    return $order->isPaid() === true;
+                    return $order->get('is_paid') === true;
                 })
                 ->filter(function ($order) use ($product) {
-                    return $order->lineItems()
+                    return collect($order->get('items'))
                         ->where('product', $product->get('prerequisite_product'))
                         ->count() > 0;
                 })
                 ->count() > 0;
 
             if (! $hasPurchasedPrerequisiteProduct) {
-                return $this->withErrors($request, __("Before purchasing this product, you must purchase {$prerequisiteProduct->get('title')} first."));
+                return $this->withErrors($request, __("Before purchasing this product, you must purchase {$prerequisiteProduct->title()} first."));
             }
         }
 
         // Ensure the product doesn't already exist in the cart
-        $alreadyExistsQuery = $items;
-        $metadata = Arr::only($request->all(), config('simple-commerce.field_whitelist.line_items'));
+        $alreadyExistsQuery = collect($items);
+        $metadata = Arr::except($request->all(), $this->reservedKeys);
 
         if ($request->has('variant')) {
             $alreadyExistsQuery = $alreadyExistsQuery->where('variant', [
@@ -144,16 +122,16 @@ class CartItemController extends BaseActionController
                 'product' => $request->get('product'),
             ]);
         } else {
-            $alreadyExistsQuery = $alreadyExistsQuery->where('product', Product::find($request->product));
+            $alreadyExistsQuery = $alreadyExistsQuery->where('product', $request->product);
         }
 
-        if (config('simple-commerce.cart.unique_metadata', false)) {
-            $alreadyExistsQuery = $alreadyExistsQuery->where('metadata', collect($metadata));
+        if (config('simple-commerce.cart.unique_metadata')) {
+            $alreadyExistsQuery = $alreadyExistsQuery->where('metadata', $metadata);
         }
 
         if ($alreadyExistsQuery->count() >= 1) {
-            $cart->updateLineItem($alreadyExistsQuery->first()->id(), [
-                'quantity' => (int) $alreadyExistsQuery->first()->quantity() + $request->quantity,
+            $cart->updateLineItem($alreadyExistsQuery->first()['id'], [
+                'quantity' => (int) $alreadyExistsQuery->first()['quantity'] + $request->quantity,
             ]);
         } else {
             $item = [
@@ -181,7 +159,7 @@ class CartItemController extends BaseActionController
 
         return $this->withSuccess($request, [
             'message' => __('simple-commerce.messages.cart_item_added'),
-            'cart'    => $cart->fresh()->toResource(),
+            'cart'    => $cart->toResource(),
         ]);
     }
 
@@ -201,7 +179,10 @@ class CartItemController extends BaseActionController
             array_merge(
                 $data,
                 [
-                    'metadata' => $lineItem->metadata()->merge(Arr::only($request->all(), config('simple-commerce.field_whitelist.line_items')))->toArray(),
+                    'metadata' => array_merge(
+                        isset($lineItem['metadata']) ? $lineItem['metadata'] : [],
+                        Arr::except($request->all(), $this->reservedKeys),
+                    ),
                 ]
             ),
         );

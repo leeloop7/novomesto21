@@ -69,11 +69,3 @@ sections:
           icon: toggle
           listable: hidden
           instructions_position: above
-          localizable: true
-      -
-        handle: tax_category
-        field:
-          type: tax_category
-          display: 'Tax Category'
-          max_items: 1
-          mode: select

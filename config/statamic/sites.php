@@ -20,6 +20,7 @@ return [
             'locale' => 'sl',
             'url' => '/',
         ],
+
         'english' => [
             'name' => 'English',
             'locale' => 'en',

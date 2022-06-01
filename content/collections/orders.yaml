@@ -1,9 +1,8 @@
 title: Orders
 sites:
-  default: default
-  english: english
+  - default
 propagate: false
+template: default
+layout: layout
 revisions: false
-title_format:
-  default: '#{order_number}'
-  english: '#{order_number}'
+sort_dir: asc

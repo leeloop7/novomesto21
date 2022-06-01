@@ -49,7 +49,5 @@ return [
     'veterans' => 'Veteran NC',
     'best_time_short' => 'Best time (:race)',
     'confirm' => 'Close',
-    'finish_and_pay' => 'Finish and pay (:amount)',
-    'Individualna prijava' => 'Individual registration',
-    'Skupinska prijava' => 'Group registration'
+    'finish_and_pay' => 'Finish and pay'
 ];

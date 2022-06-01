@@ -25,7 +25,7 @@ return [
     |
     */
 
-    'start_page' => 'simple-commerce/overview',
+    'start_page' => 'dashboard',
 
     /*
     |--------------------------------------------------------------------------
@@ -36,6 +36,13 @@ return [
     | use the same widget multiple times in different configurations.
     |
     */
+
+    'widgets' => [
+        [
+            'type' => 'sales',
+            'width' => 50,
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------

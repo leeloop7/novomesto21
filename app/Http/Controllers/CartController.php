@@ -24,11 +24,12 @@ class CartController extends BaseActionController
             return [];
         }
 
-        return ['data' => $this->getCart()->toAugmentedArray()];
+        return $this->getCart()->toResource();
     }
 
     public function update(UpdateRequest $request)
     {
+
         $cart = $this->getCart();
         $data = Arr::except($request->all(), ['_token', '_params', '_redirect', '_request']);
 
@@ -38,7 +39,6 @@ class CartController extends BaseActionController
             } elseif ($value === 'off') {
                 $value = false;
             }
-
             $data[$key] = $value;
         }
 
@@ -58,34 +58,21 @@ class CartController extends BaseActionController
                     throw new CustomerNotFound("Customer with ID [{$data['customer']}] could not be found.");
                 }
             } catch (CustomerNotFound $e) {
-                $customerData = [
+                $customer = Customer::create([
+                    'name'  => isset($data['customer']['name']) && isset($data['customer']['surname']) ?
+                                    $data['customer']['name'] . ' ' . $data['customer']['surname'] : '',
+                    'email' => $data['customer']['email'],
                     'published' => true,
-                ];
-
-                if (isset($customerData['customer']['name'])) {
-                    $customerData['name'] = $customerData['customer']['name'];
-                }
-
-                if (isset($customerData['customer']['first_name'])) {
-                    $customerData['first_name'] = $customerData['customer']['first_name'];
-                    $customerData['last_name'] = $customerData['customer']['last_name'];
-                }
-
-                $customer = Customer::make()
-                    ->email($data['customer']['email'])
-                    ->data($customerData);
-
-                $customer->save();
+                ], $this->guessSiteFromRequest()->handle());
             }
 
             if (is_array($data['customer'])) {
-                $customer->merge($data['customer'])->save();
+                $customer->data($data['customer'])->save();
             }
 
-            $cart->customer($customer->id());
-            $cart->save();
-
-            $cart = $cart->fresh();
+            $cart->data([
+                'customer' => $customer->id,
+            ])->save();
 
             unset($data['customer']);
         }
@@ -98,43 +85,29 @@ class CartController extends BaseActionController
                     throw new CustomerNotFound("Customer with ID [{$data['customer']}] could not be found.");
                 }
             } catch (CustomerNotFound $e) {
-                $customerData = [
+                $customer = Customer::create([
+                    'name'  => isset($data['name']) && isset($data['surname']) ?
+                                    $data['name'] . ' ' . $data['surname'] : '',
+                    'email' => $data['email'],
                     'published' => true,
-                ];
-
-                if (isset($data['name'])) {
-                    $customerData['name'] = $data['name'];
-                }
-
-                if (isset($data['first_name']) && isset($data['last_name'])) {
-                    $customerData['first_name'] = $data['first_name'];
-                    $customerData['last_name'] = $data['last_name'];
-                }
-
-                $customer = Customer::make()
-                    ->email($data['email'])
-                    ->data($customerData);
-
-                $customer->save();
+                ], $this->guessSiteFromRequest()->handle());
             }
 
-            $cart->customer($customer->id());
-            $cart->save();
-
-            $cart = $cart->fresh();
+            $cart->data([
+                'customer' => $customer->id,
+            ])->save();
 
             unset($data['name']);
-            unset($data['first_name']);
-            unset($data['last_name']);
+            unset($data['surname']);
             unset($data['email']);
         }
 
         if ($data !== null) {
-            $cart = $cart->merge(Arr::only($data, config('simple-commerce.field_whitelist.orders')));
+            $cart->data($data);
         }
 
-        $cart->save();
-        $cart->recalculate();
+        $cart->save()
+            ->recalculate();
 
         return $this->withSuccess($request, [
             'message' => __('simple-commerce.messages.cart_updated'),
@@ -144,11 +117,13 @@ class CartController extends BaseActionController
 
     public function destroy(DestroyRequest $request)
     {
-        $cart = $this->getCart();
-
-        $cart->clearLineItems();
-
-        $cart->save()->recalculate();
+        $this
+            ->getCart()
+            ->data([
+                'items' => [],
+            ])
+            ->save()
+            ->recalculate();
 
         return $this->withSuccess($request, [
             'message' => __('simple-commerce.messages.cart_deleted'),

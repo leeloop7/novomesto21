@@ -5,4 +5,5 @@ propagate: false
 template: default
 layout: layout
 revisions: false
+title_format: '{first_name} {last_name}'
 sort_dir: asc

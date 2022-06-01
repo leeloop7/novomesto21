@@ -20,7 +20,13 @@ preferences:
         - is_paid
     customers:
       columns:
-        - name
+        - title
         - email
     pages:
       after_save: continue_editing
+  simple_commerce:
+    overview_widgets:
+      orders-chart: true
+      recent-orders: true
+      top-customers: false
+      low-stock-products: false

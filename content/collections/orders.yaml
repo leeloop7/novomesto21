@@ -2,7 +2,5 @@ title: Orders
 sites:
   - default
 propagate: false
-template: default
-layout: layout
 revisions: false
-sort_dir: asc
+title_format: '#{order_number}'

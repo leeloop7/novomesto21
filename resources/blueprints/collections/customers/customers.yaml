@@ -6,22 +6,32 @@ sections:
       -
         handle: title
         field:
-          type: text
-          required: true
-          input_type: text
-          listable: hidden
-          display: Title
-          validate:
-            - required
+          type: hidden
+          required: false
       -
-        handle: name
+        handle: first_name
         field:
           input_type: text
+          antlers: false
+          display: 'First name'
           type: text
+          icon: text
           width: 50
           listable: hidden
-          display: Name
-          validate: required
+          instructions_position: above
+          read_only: false
+      -
+        handle: last_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Last name'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
       -
         handle: email
         field:

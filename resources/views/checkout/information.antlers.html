@@ -47,14 +47,14 @@
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-200">{{ trans:checkout.name }} <span class="text-red-500">*</span></label>
                 <div class="mt-1">
-                  <input required type="text" id="name" name="name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                  <input required type="text" id="name" name="first_name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
                 </div>
               </div>
 
               <div>
                 <label for="surname" class="block text-sm font-medium text-gray-200">{{ trans:checkout.surname }} <span class="text-red-500">*</span></label>
                 <div class="mt-1">
-                  <input required type="text" id="surname" name="surname" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                  <input required type="text" id="surname" name="last_name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
                 </div>
               </div>
 
@@ -415,7 +415,7 @@
                   <div class="flex">
                     <div class="min-w-0 flex-1">
                       <h4 class="text-sm">
-                        <span class="font-medium text-gray-200 hover:text-gray-100">{{ product:title }}</span>
+                        <span class="font-medium text-gray-200 hover:text-gray-100">{{ trans key="checkout.{ product:title }" }}</span>
                       </h4>
                       <p class="mt-1 text-sm text-gray-400">{{ variant:variant }}</p>
                     </div>

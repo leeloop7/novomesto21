@@ -18,10 +18,12 @@ preferences:
         - country
         - grand_total
         - is_paid
+      per_page: 500
     customers:
       columns:
         - title
         - email
+      per_page: 100
     pages:
       after_save: continue_editing
   simple_commerce:

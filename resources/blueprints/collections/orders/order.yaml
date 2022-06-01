@@ -4,9 +4,10 @@ sections:
     display: Main
     fields:
       -
-        handle: order_number
+        handle: title
         field:
           type: text
+          required: true
           validate:
             - required
           display: 'Order Number'
@@ -15,7 +16,6 @@ sections:
           antlers: false
           read_only: true
           width: 50
-          instructions_position: above
       -
         handle: customer
         field:
@@ -29,7 +29,6 @@ sections:
           listable: hidden
           instructions_position: above
           max_items: 1
-          read_only: false
       -
         handle: phone
         field:

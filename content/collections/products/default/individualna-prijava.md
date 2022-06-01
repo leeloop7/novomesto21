@@ -1,5 +1,5 @@
 ---
-id: 8924cf94-c478-4a9b-a053-073a97b9d8c8
+id: 66e767a9-ee34-4dc4-8681-d09bb59f0cf5
 blueprint: product
 title: 'Individualna prijava'
 product_variants:
@@ -23,7 +23,8 @@ product_variants:
       key: Polmaraton
       variant: Polmaraton
       price: 2500
-group: false
 updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1652692536
+updated_at: 1648285342
+order: 1
+group: false
 ---

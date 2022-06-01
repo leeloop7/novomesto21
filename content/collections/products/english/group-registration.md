@@ -1,6 +1,6 @@
 ---
-id: ec2d8b2a-0c6c-46d1-bd90-c819e77b8a68
-origin: 8373c220-19f3-4452-b9d5-7f9a566bcd90
+id: 7fa137f9-7e6b-474f-babd-d765fccf2061
+origin: 4d7ded77-50c9-46b8-b90d-5713051a57ac
 title: 'Group registration'
 product_variants:
   variants:
@@ -24,5 +24,5 @@ product_variants:
       variant: Halfmarathon
       price: 2500
 updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1651774868
+updated_at: 1652692623
 ---

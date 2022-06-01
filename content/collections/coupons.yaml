@@ -1,6 +1,6 @@
 title: Coupons
 sites:
-  - default
-  - english
+  default: default
+  english: english
 propagate: false
 revisions: false

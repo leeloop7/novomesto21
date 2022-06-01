@@ -49,5 +49,7 @@ return [
     'veterans' => 'DP Veteranov',
     'best_time_short' => 'Najboljši čas (:race)',
     'confirm' => 'Zapri',
-    'finish_and_pay' => 'Zaključi in plačaj'
+    'finish_and_pay' => 'Zaključi in plačaj (:amount)',
+    'Individualna prijava' => 'Individualna prijava',
+    'Skupinska prijava' => 'Skupinska prijava'
 ];

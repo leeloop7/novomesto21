@@ -46,13 +46,11 @@ class CustomerOrderPaid extends Notification
     public function toMail($notifiable)
     {
         $pdf = PDF::loadView('vendor.simple-commerce.receipt', $this->order->toAugmentedArray());
-
         return (new MailMessage)
-            ->subject('Hvala za vašo prijavo na NM21')
-            ->greeting('Pozdravljeni!')
-            ->line(__('Hvala za vašo prijavo! Račun plačila je dodan kot priloga.'))
-            ->line(__('Če imate kakršnakoli vprašanja, stopite v kontakt.'))
-            ->salutation('Lep pozdrav, ekipa NM21')
+            ->subject('Potrditev prijave na 5. Novomeški 1/2 Maraton')
+            ->markdown('vendor.notifications.customer_order_paid', [
+                'order' => $this->order,
+            ])
             ->attachData(
                 $pdf->output(),
                 'racun.pdf',

@@ -1,8 +1,9 @@
 title: Customers
 sites:
-  - default
+  default: default
+  english: english
 propagate: false
-template: default
-layout: layout
 revisions: false
-sort_dir: asc
+title_format:
+  default: '{first_name} {last_name} <{email}>'
+  english: '{first_name} {last_name} <{email}>'

@@ -15,3 +15,5 @@ preferences:
         - author
         - site
         - slug
+    orders:
+      per_page: 100

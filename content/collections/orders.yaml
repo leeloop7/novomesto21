@@ -5,5 +5,5 @@ propagate: false
 template: default
 layout: layout
 revisions: false
-title_format: '#{customer:last_name} #{order_number}'
+title_format: '{customer:first_name} {customer:last_name}'
 sort_dir: asc

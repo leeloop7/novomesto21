@@ -1,5 +1,5 @@
 <div class="max-w-5xl mx-auto">
-  <img src="{{ featured_image }}" class="aspect-video rounded-md shadow-xl" />
+  <img src="{{ featured_image }}" class="aspect-w-16 aspect-h-9 rounded-md shadow-xl" />
   <div class="max-w-3xl mx-auto">
     <h1 class="text-4xl text-center text-white font-bold mt-6 p-6">{{ title }}</h1>
     <div class="text-center text-green-600 mt-2 p-3 text-xs uppercase">
@@ -10,8 +10,8 @@
       {{ bard_field }}
     </article>
     <section class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
-      {{ assets:gallery }}
-        <img src="{{ url }}" class="aspect-video glightbox rounded-md" data-gallery="gallery" />
+      {{ assets:gallery container="assets" }}
+        <img src="{{ url }}" class="aspect-w-16 aspect-h-9 glightbox rounded-md" data-gallery="gallery" />
       {{ /assets:gallery }}
     </section>
   </div>

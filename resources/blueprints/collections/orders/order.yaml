@@ -4,6 +4,36 @@ sections:
     display: Main
     fields:
       -
+        handle: customer
+        field:
+          mode: select
+          create: true
+          collections:
+            - customers
+          display: Customer
+          type: entries
+          icon: entries
+          listable: hidden
+          instructions_position: above
+          max_items: 1
+          read_only: false
+      -
+        handle: gender
+        field:
+          options:
+            male: Male
+            female: Female
+          inline: false
+          cast_booleans: false
+          display: Gender
+          type: radio
+          icon: radio
+          listable: hidden
+          instructions_position: above
+          width: 33
+          if:
+            competitors: 'equals null'
+      -
         handle: title
         field:
           type: hidden
@@ -21,20 +51,6 @@ sections:
           read_only: true
           width: 50
           instructions_position: above
-      -
-        handle: customer
-        field:
-          mode: select
-          create: true
-          collections:
-            - customers
-          display: Customer
-          type: entries
-          icon: entries
-          listable: hidden
-          instructions_position: above
-          max_items: 1
-          read_only: false
       -
         handle: phone
         field:
@@ -90,6 +106,16 @@ sections:
           width: 50
           if:
             competitors: 'equals null'
+      -
+        handle: dp_vet
+        field:
+          default: false
+          display: 'DP Vet'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
       -
         handle: items
         field:
@@ -158,22 +184,6 @@ sections:
           add_row: 'Add Line Item'
           instructions_position: above
           max_rows: 1
-      -
-        handle: gender
-        field:
-          options:
-            male: Male
-            female: Female
-          inline: false
-          cast_booleans: false
-          display: Gender
-          type: radio
-          icon: radio
-          listable: hidden
-          instructions_position: above
-          width: 33
-          if:
-            competitors: 'equals null'
       -
         handle: birthyear
         field:
@@ -256,6 +266,26 @@ sections:
           listable: hidden
           if:
             name: 'equals x'
+      -
+        handle: email_notifications
+        field:
+          default: false
+          display: 'Email notifications'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
+      -
+        handle: sms_notifications
+        field:
+          default: false
+          display: 'SMS notifications'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
       -
         handle: competitors
         field:
@@ -353,6 +383,23 @@ sections:
     display: Sidebar
     fields:
       -
+        handle: paid_date
+        field:
+          mode: single
+          time_enabled: true
+          time_required: true
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          type: date
+          listable: hidden
+          display: 'Paid Date'
+          validate: required
+          read_only: true
+          width: 50
+      -
         handle: grand_total
         field:
           type: money
@@ -371,23 +418,6 @@ sections:
           read_only: true
           instructions_position: above
           default: false
-      -
-        handle: paid_date
-        field:
-          mode: single
-          time_enabled: true
-          time_required: true
-          earliest_date: '1900-01-01'
-          full_width: false
-          inline: false
-          columns: 1
-          rows: 1
-          type: date
-          listable: hidden
-          display: 'Paid Date'
-          validate: required
-          read_only: true
-          width: 50
   contacts:
     display: Contacts
     fields:
@@ -436,36 +466,6 @@ sections:
           icon: textarea
           listable: hidden
           instructions_position: above
-      -
-        handle: dp_vet
-        field:
-          default: false
-          display: 'DP Vet'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions_position: above
-          width: 33
-      -
-        handle: email_notifications
-        field:
-          default: false
-          display: 'Email notifications'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions_position: above
-          width: 33
-      -
-        handle: sms_notifications
-        field:
-          default: false
-          display: 'SMS notifications'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions_position: above
-          width: 33
       -
         handle: terms_and_conditions
         field:

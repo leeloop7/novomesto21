@@ -18,6 +18,22 @@ sections:
           max_items: 1
           read_only: false
       -
+        handle: gender
+        field:
+          options:
+            male: Male
+            female: Female
+          inline: false
+          cast_booleans: false
+          display: Gender
+          type: radio
+          icon: radio
+          listable: hidden
+          instructions_position: above
+          width: 33
+          if:
+            competitors: 'equals null'
+      -
         handle: title
         field:
           type: hidden
@@ -91,6 +107,16 @@ sections:
           if:
             competitors: 'equals null'
       -
+        handle: dp_vet
+        field:
+          default: false
+          display: 'DP Vet'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
+      -
         handle: items
         field:
           fields:
@@ -158,22 +184,6 @@ sections:
           add_row: 'Add Line Item'
           instructions_position: above
           max_rows: 1
-      -
-        handle: gender
-        field:
-          options:
-            male: Male
-            female: Female
-          inline: false
-          cast_booleans: false
-          display: Gender
-          type: radio
-          icon: radio
-          listable: hidden
-          instructions_position: above
-          width: 33
-          if:
-            competitors: 'equals null'
       -
         handle: birthyear
         field:
@@ -256,6 +266,26 @@ sections:
           listable: hidden
           if:
             name: 'equals x'
+      -
+        handle: email_notifications
+        field:
+          default: false
+          display: 'Email notifications'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
+      -
+        handle: sms_notifications
+        field:
+          default: false
+          display: 'SMS notifications'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
       -
         handle: competitors
         field:
@@ -436,36 +466,6 @@ sections:
           icon: textarea
           listable: hidden
           instructions_position: above
-      -
-        handle: dp_vet
-        field:
-          default: false
-          display: 'DP Vet'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions_position: above
-          width: 33
-      -
-        handle: email_notifications
-        field:
-          default: false
-          display: 'Email notifications'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions_position: above
-          width: 33
-      -
-        handle: sms_notifications
-        field:
-          default: false
-          display: 'SMS notifications'
-          type: toggle
-          icon: toggle
-          listable: hidden
-          instructions_position: above
-          width: 33
       -
         handle: terms_and_conditions
         field:

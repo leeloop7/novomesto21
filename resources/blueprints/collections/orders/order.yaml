@@ -227,7 +227,7 @@ sections:
           validate:
             - required
           instructions_position: above
-          listable: hidden
+          listable: false
           if:
             name: 'equals x'
       -
@@ -239,7 +239,7 @@ sections:
           validate:
             - required
           instructions_position: above
-          listable: hidden
+          listable: false
           if:
             name: 'equals x'
       -
@@ -251,7 +251,7 @@ sections:
           validate:
             - required
           instructions_position: above
-          listable: hidden
+          listable: false
           if:
             name: 'equals x'
       -
@@ -263,7 +263,7 @@ sections:
           validate:
             - required
           instructions_position: above
-          listable: hidden
+          listable: false
           if:
             name: 'equals x'
       -

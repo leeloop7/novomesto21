@@ -17,6 +17,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.82",
         "laravel/tinker": "^2.5",
+        "roorda-ict/statamic-entries-export": "^1.0",
         "spatie/statamic-responsive-images": "^2.12",
         "statamic/cms": "3.3.12"
     },

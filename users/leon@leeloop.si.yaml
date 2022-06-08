@@ -13,7 +13,6 @@ preferences:
     orders:
       columns:
         - title
-        - customer
         - phone
         - country
         - grand_total

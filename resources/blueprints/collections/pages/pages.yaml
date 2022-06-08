@@ -100,6 +100,9 @@ sections:
           icon: assets
           listable: hidden
           instructions_position: above
+          read_only: false
+          container: assets
+          max_files: 1
   sidebar:
     display: Sidebar
     fields:

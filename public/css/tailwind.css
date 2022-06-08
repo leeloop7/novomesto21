@@ -1853,7 +1853,7 @@ select{
 .hidden{
   display: none;
 }
-.aspect-video{
+.aspect-auto{
   aspect-ratio: 16 / 9;
 }
 .aspect-square{
@@ -8159,4 +8159,3 @@ input[type=number] {
          column-gap: 4rem;
   }
 }
-

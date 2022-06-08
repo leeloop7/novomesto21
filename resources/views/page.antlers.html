@@ -15,7 +15,9 @@
   </div>
   <div id="content"
        class="col-span-4 md:col-span-3 text-base">
+    {{ if featured_image }}
     <img src="{{ featured_image }}" class="aspect-video rounded-md shadow-xl mb-4" />
+    {{ /if }}
 
     <h1 class="text-4xl font-bold text-gray-600 mb-6">{{ title }}</h1>
     {{ code_field }}

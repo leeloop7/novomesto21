@@ -26,6 +26,11 @@ preferences:
       per_page: 100
     pages:
       after_save: continue_editing
+    coupons:
+      columns:
+        - title
+        - slug
+        - value
   simple_commerce:
     overview_widgets:
       orders-chart: true

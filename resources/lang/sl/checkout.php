@@ -54,5 +54,10 @@ return [
     'Skupinska prijava' => 'Skupinska prijava',
     '6.5km' => '6.5km',
     '10km' => '10km',
-    'Polmaraton' => 'Polmaraton'
+    'Polmaraton' => 'Polmaraton',
+    'Splošno' => 'Splošno',
+    'coupon_discount' => 'Popust s kodo',
+    'coupon' => 'Koda za popust',
+    'apply_coupon' => 'Unovči kodo',
+    'nothing_to_pay' => 'Plačilo ni potrebno'
 ];

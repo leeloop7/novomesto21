@@ -4,6 +4,20 @@ sections:
     display: Main
     fields:
       -
+        handle: customer
+        field:
+          mode: select
+          create: true
+          collections:
+            - customers
+          display: Customer
+          type: entries
+          icon: entries
+          listable: hidden
+          instructions_position: above
+          max_items: 1
+          read_only: false
+      -
         handle: competitors
         field:
           display: Competitors
@@ -29,20 +43,6 @@ sections:
           read_only: true
           width: 50
           instructions_position: above
-      -
-        handle: customer
-        field:
-          mode: select
-          create: true
-          collections:
-            - customers
-          display: Customer
-          type: entries
-          icon: entries
-          listable: hidden
-          instructions_position: above
-          max_items: 1
-          read_only: false
       -
         handle: phone
         field:

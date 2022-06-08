@@ -4,6 +4,14 @@ sections:
     display: Main
     fields:
       -
+        handle: competitors
+        field:
+          display: Competitors
+          type: table
+          icon: table
+          listable: hidden
+          instructions_position: above
+      -
         handle: title
         field:
           type: hidden
@@ -256,14 +264,6 @@ sections:
           listable: hidden
           if:
             name: 'equals x'
-      -
-        handle: competitors
-        field:
-          display: Competitors
-          type: table
-          icon: table
-          listable: hidden
-          instructions_position: above
   address_information:
     display: 'Address Information'
     fields:
@@ -353,6 +353,23 @@ sections:
     display: Sidebar
     fields:
       -
+        handle: paid_date
+        field:
+          mode: single
+          time_enabled: true
+          time_required: true
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          type: date
+          listable: hidden
+          display: 'Paid Date'
+          validate: required
+          read_only: true
+          width: 50
+      -
         handle: grand_total
         field:
           type: money
@@ -371,23 +388,6 @@ sections:
           read_only: true
           instructions_position: above
           default: false
-      -
-        handle: paid_date
-        field:
-          mode: single
-          time_enabled: true
-          time_required: true
-          earliest_date: '1900-01-01'
-          full_width: false
-          inline: false
-          columns: 1
-          rows: 1
-          type: date
-          listable: hidden
-          display: 'Paid Date'
-          validate: required
-          read_only: true
-          width: 50
   contacts:
     display: Contacts
     fields:

@@ -48,7 +48,7 @@ sections:
           listable: hidden
           input_type: text
           antlers: false
-          read_only: true
+          read_only: false
           width: 50
           instructions_position: above
       -

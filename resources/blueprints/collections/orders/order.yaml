@@ -139,7 +139,7 @@ sections:
                 validate:
                   - required
                 width: 50
-                read_only: false
+                read_only: true
                 instructions_position: above
                 create: true
             -
@@ -150,7 +150,7 @@ sections:
                 icon: product_variant
                 width: 50
                 listable: hidden
-                read_only: false
+                read_only: true
                 instructions_position: above
             -
               handle: quantity
@@ -160,7 +160,7 @@ sections:
                 listable: hidden
                 display: Quantity
                 width: 50
-                read_only: false
+                read_only: true
                 instructions_position: above
                 antlers: false
             -
@@ -171,7 +171,7 @@ sections:
                 display: Total
                 validate: required
                 width: 50
-                read_only: false
+                read_only: true
                 instructions_position: above
             -
               handle: metadata

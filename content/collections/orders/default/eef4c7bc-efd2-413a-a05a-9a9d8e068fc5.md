@@ -17,6 +17,9 @@ contact_name: 'Maruša Ajdišek'
 contact_phone: '070865454'
 terms_and_conditions: true
 gdpr: true
+stripe:
+  intent: pi_3LAfRbBuFvIeTKRH1f2qdtII
+  client_secret: pi_3LAfRbBuFvIeTKRH1f2qdtII_secret_6vMSYKVt1TgUNbzpiC5FTPyJZ
 is_paid: false
 is_shipped: false
 is_refunded: false

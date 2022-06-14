@@ -18,12 +18,12 @@
         "laravel/framework": "^8.82",
         "laravel/tinker": "^2.5",
         "roorda-ict/statamic-entries-export": "^1.0",
+        "spatie/laravel-ignition": "^1.2",
         "spatie/statamic-responsive-images": "^2.12",
         "statamic/cms": "3.3.12"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
-        "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^5.10",

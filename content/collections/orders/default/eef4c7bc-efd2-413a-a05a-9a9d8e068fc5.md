@@ -3,6 +3,7 @@ id: eef4c7bc-efd2-413a-a05a-9a9d8e068fc5
 published: false
 blueprint: order
 order_number: 88
+title: 'andrej gašperin'
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -25,5 +26,5 @@ items_total: 2200
 tax_total: 0
 shipping_total: 0
 coupon_total: 0
-title: ' '
+customer: a1f8d872-a428-4547-a3f1-801151b613b2
 ---

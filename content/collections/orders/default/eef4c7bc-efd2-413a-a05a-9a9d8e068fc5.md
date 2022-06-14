@@ -1,6 +1,5 @@
 ---
 id: eef4c7bc-efd2-413a-a05a-9a9d8e068fc5
-published: false
 blueprint: order
 order_number: 88
 title: 'andrej gašperin'
@@ -17,6 +16,7 @@ contact_name: 'Maruša Ajdišek'
 contact_phone: '070865454'
 terms_and_conditions: true
 gdpr: true
+published: true
 stripe:
   intent: pi_3LAfRbBuFvIeTKRH1f2qdtII
   client_secret: pi_3LAfRbBuFvIeTKRH1f2qdtII_secret_6vMSYKVt1TgUNbzpiC5FTPyJZ
@@ -25,7 +25,7 @@ items_total: 2200
 shipping_total: 0
 tax_total: 0
 coupon_total: 0
-is_paid: false
+is_paid: true
 is_shipped: false
 is_refunded: false
 items:
@@ -43,4 +43,5 @@ items:
       price_includes_tax: true
     metadata: {  }
 customer: a1f8d872-a428-4547-a3f1-801151b613b2
+paid_date: '2022-06-14 19:31'
 ---

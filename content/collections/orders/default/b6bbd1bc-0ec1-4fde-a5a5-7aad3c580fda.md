@@ -1,6 +1,5 @@
 ---
 id: b6bbd1bc-0ec1-4fde-a5a5-7aad3c580fda
-published: false
 blueprint: order
 order_number: 111
 title: 'Leon Papež'
@@ -18,12 +17,13 @@ email_notifications: true
 sms_notifications: true
 terms_and_conditions: true
 gdpr: true
+published: true
 grand_total: 0
 items_total: 2000
 shipping_total: 0
 tax_total: 0
 coupon_total: 2000
-is_paid: false
+is_paid: true
 is_shipped: false
 is_refunded: false
 items:
@@ -42,4 +42,5 @@ items:
     metadata: {  }
 customer: bb556aca-0c5a-46c1-a80f-77c5e3b84067
 coupon: 98196ec6-aafc-4660-9e0b-db04bb06a737
+paid_date: '2022-06-16 07:24'
 ---

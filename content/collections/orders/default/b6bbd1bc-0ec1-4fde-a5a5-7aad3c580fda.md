@@ -4,6 +4,20 @@ published: false
 blueprint: order
 order_number: 111
 title: 'Leon Papež'
+country: SI
+address: 'Ulica Slavka Gruma 36, 7'
+zip: '8000'
+city: 'Novo mesto'
+phone: '+38640474544'
+gender: male
+birthyear: '1986'
+shirt_size: m
+contact_name: 'Leon Papež'
+contact_phone: '+38640474544'
+email_notifications: true
+sms_notifications: true
+terms_and_conditions: true
+gdpr: true
 is_paid: false
 is_shipped: false
 is_refunded: false

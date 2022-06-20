@@ -16,4 +16,4 @@ preferences:
         - site
         - slug
     orders:
-      per_page: 100
+      per_page: 500

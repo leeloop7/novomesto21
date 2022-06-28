@@ -17,3 +17,9 @@ preferences:
         - slug
     orders:
       per_page: 100
+    customers:
+      columns:
+        - last_name
+        - first_name
+        - title
+        - site

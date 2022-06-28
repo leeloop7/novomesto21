@@ -18,14 +18,14 @@ preferences:
     orders:
       per_page: 100
       columns:
-        - order_number
-        - customer
-        - competitors
-        - is_paid
-        - title
-        - site
         - paid_date
+        - order_number
+        - is_paid
+        - customer
+        - title
+        - competitors
         - gender
+        - site
     customers:
       columns:
         - last_name

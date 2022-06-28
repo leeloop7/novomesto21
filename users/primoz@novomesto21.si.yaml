@@ -23,3 +23,4 @@ preferences:
         - first_name
         - title
         - site
+        - email

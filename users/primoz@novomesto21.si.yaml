@@ -19,8 +19,8 @@ preferences:
       per_page: 100
     customers:
       columns:
-        - title
-        - site
         - last_name
         - first_name
+        - title
         - email
+        - site

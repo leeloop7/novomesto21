@@ -17,6 +17,15 @@ preferences:
         - slug
     orders:
       per_page: 100
+      columns:
+        - order_number
+        - customer
+        - competitors
+        - is_paid
+        - title
+        - site
+        - paid_date
+        - gender
     customers:
       columns:
         - last_name

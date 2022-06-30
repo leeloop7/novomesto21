@@ -32,6 +32,7 @@ return [
     'error' => 'Prišlo je do napake!',
     'thank_you' => 'Hvala',
     'noted' => 'Vaša prijava je bila uspešna!',
+    'notif' => 'Na vaš mail smo vam poslali podatke o plačilu in račun.',
     'register' => 'Prijava',
     'number_of_people' => 'Št. oseb',
     'pp' => '/ osebo',

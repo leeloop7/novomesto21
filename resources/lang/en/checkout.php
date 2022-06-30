@@ -32,6 +32,7 @@ return [
     'error' => 'There were some errors with your submission!',
     'thank_you' => 'Thank you',
     'noted' => 'Your registration was successful!',
+    'notif' => 'We have sent you payment information and invoice to your e-mail.',
     'register' => 'Register',
     'number_of_people' => 'People',
     'pp' => '/ person',

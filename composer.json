@@ -20,7 +20,7 @@
         "roorda-ict/statamic-entries-export": "^1.0",
         "spatie/laravel-ignition": "^1.2",
         "spatie/statamic-responsive-images": "^2.12",
-        "statamic/cms": "3.3.12"
+        "statamic/cms": "3.3.16"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",

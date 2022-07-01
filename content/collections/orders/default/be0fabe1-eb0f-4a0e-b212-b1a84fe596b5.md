@@ -18,8 +18,8 @@ sms_notifications: true
 terms_and_conditions: true
 gdpr: true
 stripe:
-  intent: pi_3LGhEEBuFvIeTKRH1kGho805
-  client_secret: pi_3LGhEEBuFvIeTKRH1kGho805_secret_fH92jOm12us93BEcapQz9ut5i
+  intent: pi_3LGhF7BuFvIeTKRH2mN2lClT
+  client_secret: pi_3LGhF7BuFvIeTKRH2mN2lClT_secret_KdT8VUvs2AhQnNcHGL5ck5QRZ
 is_paid: false
 is_shipped: false
 is_refunded: false

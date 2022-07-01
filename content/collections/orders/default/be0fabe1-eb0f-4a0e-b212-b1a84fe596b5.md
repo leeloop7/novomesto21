@@ -3,7 +3,7 @@ id: be0fabe1-eb0f-4a0e-b212-b1a84fe596b5
 published: false
 blueprint: order
 order_number: 169
-title: ' '
+title: 'Rok Godler'
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -26,4 +26,5 @@ items_total: 2200
 tax_total: 0
 shipping_total: 0
 coupon_total: 0
+customer: 2f10a8e2-d87c-4d47-b37b-6c8ac1922b9a
 ---

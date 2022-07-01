@@ -15,6 +15,11 @@ shirt_size: l
 contact_name: 'Katja Urajnar'
 terms_and_conditions: true
 gdpr: true
+grand_total: 0
+items_total: 2200
+shipping_total: 0
+tax_total: 0
+coupon_total: 2200
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -32,11 +37,6 @@ items:
       rate: 0
       price_includes_tax: true
     metadata: {  }
-grand_total: 0
-items_total: 2200
-tax_total: 0
-shipping_total: 0
-coupon_total: 2200
 customer: 58c54915-b746-4b3a-b460-82b4e0130180
 coupon: d4c24a13-47c9-4755-8be5-79a2b68566a5
 ---

@@ -20,11 +20,6 @@ gdpr: true
 stripe:
   intent: pi_3LGhH1BuFvIeTKRH2LvxdJ8p
   client_secret: pi_3LGhH1BuFvIeTKRH2LvxdJ8p_secret_HVm8JXMDjfyqNUwkkhJspIIYO
-grand_total: 2200
-items_total: 2200
-shipping_total: 0
-tax_total: 0
-coupon_total: 0
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -42,5 +37,38 @@ items:
       rate: 0
       price_includes_tax: true
     metadata: {  }
+grand_total: 2200
+items_total: 2200
+tax_total: 0
+shipping_total: 0
+coupon_total: 0
 customer: 2f10a8e2-d87c-4d47-b37b-6c8ac1922b9a
+gateway:
+  use: DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\StripeGateway
+  data:
+    id: pm_1LGhGJBuFvIeTKRHpg1cDwFh
+    object: payment_method
+    card:
+      brand: mastercard
+      checks:
+        address_line1_check: null
+        address_postal_code_check: null
+        cvc_check: pass
+      country: SI
+      exp_month: 6
+      exp_year: 2025
+      fingerprint: k7eGv3ZNsNURs2us
+      funding: debit
+      generated_from: null
+      last4: '1431'
+      networks:
+        available:
+          - mastercard
+        preferred: null
+      three_d_secure_usage:
+        supported: true
+      wallet: null
+    customer: cus_LyeY93JpOEoiL0
+    livemode: true
+    payment_intent: pi_3LGhH1BuFvIeTKRH2LvxdJ8p
 ---

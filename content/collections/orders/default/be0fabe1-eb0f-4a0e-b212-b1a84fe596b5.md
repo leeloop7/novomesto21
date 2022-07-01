@@ -4,6 +4,19 @@ published: false
 blueprint: order
 order_number: 169
 title: 'Rok Godler'
+country: SI
+address: 'Ubg 46'
+zip: '8257'
+city: Dobova
+phone: '030672283'
+club: 'Td Dobova'
+gender: male
+birthyear: '1989'
+shirt_size: m
+email_notifications: true
+sms_notifications: true
+terms_and_conditions: true
+gdpr: true
 is_paid: false
 is_shipped: false
 is_refunded: false

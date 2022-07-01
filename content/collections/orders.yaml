@@ -7,3 +7,6 @@ layout: layout
 revisions: false
 title_format: '{customer:first_name} {customer:last_name}'
 sort_dir: asc
+structure:
+  root: false
+  max_depth: 1

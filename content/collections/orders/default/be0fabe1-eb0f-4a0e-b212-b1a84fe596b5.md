@@ -20,6 +20,11 @@ gdpr: true
 stripe:
   intent: pi_3LGhH1BuFvIeTKRH2LvxdJ8p
   client_secret: pi_3LGhH1BuFvIeTKRH2LvxdJ8p_secret_HVm8JXMDjfyqNUwkkhJspIIYO
+grand_total: 2200
+items_total: 2200
+shipping_total: 0
+tax_total: 0
+coupon_total: 0
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -37,10 +42,5 @@ items:
       rate: 0
       price_includes_tax: true
     metadata: {  }
-grand_total: 2200
-items_total: 2200
-tax_total: 0
-shipping_total: 0
-coupon_total: 0
 customer: 2f10a8e2-d87c-4d47-b37b-6c8ac1922b9a
 ---

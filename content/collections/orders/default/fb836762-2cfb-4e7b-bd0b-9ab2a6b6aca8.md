@@ -4,6 +4,17 @@ published: false
 blueprint: order
 order_number: 165
 title: 'Leon Papež'
+country: SI
+address: 'Ulica Slavka Gruma 36, 7'
+zip: '8000'
+city: 'Novo mesto'
+phone: '+38640474544'
+gender: male
+birthyear: '1987'
+shirt_size: l
+contact_name: 'Katja Urajnar'
+terms_and_conditions: true
+gdpr: true
 is_paid: false
 is_shipped: false
 is_refunded: false

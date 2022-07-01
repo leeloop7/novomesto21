@@ -1,6 +1,5 @@
 ---
 id: fb836762-2cfb-4e7b-bd0b-9ab2a6b6aca8
-published: false
 blueprint: order
 order_number: 165
 title: 'Leon Papež'
@@ -15,12 +14,13 @@ shirt_size: l
 contact_name: 'Katja Urajnar'
 terms_and_conditions: true
 gdpr: true
+published: true
 grand_total: 0
 items_total: 2200
 shipping_total: 0
 tax_total: 0
 coupon_total: 2200
-is_paid: false
+is_paid: true
 is_shipped: false
 is_refunded: false
 items:
@@ -39,4 +39,5 @@ items:
     metadata: {  }
 customer: 58c54915-b746-4b3a-b460-82b4e0130180
 coupon: d4c24a13-47c9-4755-8be5-79a2b68566a5
+paid_date: '2022-07-01 07:25'
 ---

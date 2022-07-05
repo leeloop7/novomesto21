@@ -1046,6 +1046,10 @@ select{
   margin-left: 2rem;
   margin-right: 2rem;
 }
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1065,10 +1069,6 @@ select{
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
-}
-.my-2{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 .mx-2{
   margin-left: 0.5rem;
@@ -1844,6 +1844,9 @@ select{
 .grid{
   display: grid;
 }
+.\!grid{
+  display: grid !important;
+}
 .inline-grid{
   display: inline-grid;
 }
@@ -1853,11 +1856,11 @@ select{
 .hidden{
   display: none;
 }
-.aspect-auto{
+.aspect-video{
   aspect-ratio: 16 / 9;
 }
-.aspect-square{
-  aspect-ratio: 1 / 1;
+.aspect-auto{
+  aspect-ratio: auto;
 }
 .h-10{
   height: 2.5rem;
@@ -4395,20 +4398,27 @@ select{
 .border-8{
   border-width: 8px;
 }
+.border-x-0{
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
 .border-t{
   border-top-width: 1px;
 }
 .border-b{
   border-bottom-width: 1px;
 }
+.border-b-0{
+  border-bottom-width: 0px;
+}
 .border-t-0{
   border-top-width: 0px;
 }
+.border-b-2{
+  border-bottom-width: 2px;
+}
 .border-r-0{
   border-right-width: 0px;
-}
-.border-b-0{
-  border-bottom-width: 0px;
 }
 .border-l-0{
   border-left-width: 0px;
@@ -4418,9 +4428,6 @@ select{
 }
 .border-r-2{
   border-right-width: 2px;
-}
-.border-b-2{
-  border-bottom-width: 2px;
 }
 .border-l-2{
   border-left-width: 2px;
@@ -6618,6 +6625,9 @@ select{
 .pb-14{
   padding-bottom: 3.5rem;
 }
+.pl-0{
+  padding-left: 0px;
+}
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -6632,9 +6642,6 @@ select{
 }
 .pb-0{
   padding-bottom: 0px;
-}
-.pl-0{
-  padding-left: 0px;
 }
 .pt-1{
   padding-top: 0.25rem;
@@ -6898,14 +6905,14 @@ select{
 .font-semibold{
   font-weight: 600;
 }
+.font-normal{
+  font-weight: 400;
+}
 .font-thin{
   font-weight: 100;
 }
 .font-light{
   font-weight: 300;
-}
-.font-normal{
-  font-weight: 400;
 }
 .font-black{
   font-weight: 900;
@@ -6969,6 +6976,9 @@ select{
 .leading-loose{
   line-height: 2;
 }
+.leading-tight{
+  line-height: 1.25;
+}
 .leading-3{
   line-height: .75rem;
 }
@@ -6992,9 +7002,6 @@ select{
 }
 .leading-none{
   line-height: 1;
-}
-.leading-tight{
-  line-height: 1.25;
 }
 .leading-snug{
   line-height: 1.375;
@@ -7749,6 +7756,9 @@ input[type=number] {
 .focus-within\:z-10:focus-within{
   z-index: 10;
 }
+.hover\:border-transparent:hover{
+  border-color: transparent;
+}
 .hover\:bg-green-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
@@ -7768,6 +7778,10 @@ input[type=number] {
 .hover\:bg-gray-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+.hover\:bg-gray-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
@@ -7800,6 +7814,9 @@ input[type=number] {
 .focus\:border-green-500:focus{
   --tw-border-opacity: 1;
   border-color: rgb(34 197 94 / var(--tw-border-opacity));
+}
+.focus\:border-transparent:focus{
+  border-color: transparent;
 }
 .focus\:bg-gray-200:focus{
   --tw-bg-opacity: 1;
@@ -7951,6 +7968,10 @@ input[type=number] {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -8054,6 +8075,10 @@ input[type=number] {
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 @media (min-width: 1024px){
@@ -8159,3 +8184,4 @@ input[type=number] {
          column-gap: 4rem;
   }
 }
+

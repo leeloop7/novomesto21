@@ -11,9 +11,9 @@ module.exports = {
                 body: ["Montserrat", "sans-serif"],
             },
             spacing: {
-                '22': '5.5rem',
-                '30': '7.5rem'
-            }
+                22: "5.5rem",
+                30: "7.5rem",
+            },
         },
     },
     plugins: [

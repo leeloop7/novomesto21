@@ -60,5 +60,6 @@ return [
     'coupon_discount' => 'Popust s kodo',
     'coupon' => 'Koda za popust',
     'apply_coupon' => 'Unovči kodo',
-    'nothing_to_pay' => 'Plačilo ni potrebno'
+    'nothing_to_pay' => 'Plačilo ni potrebno',
+    'list_of_participants' => 'Seznam prijavljenih tekmovalcev'
 ];

@@ -3093,6 +3093,13 @@ select{
 .gap-y-6{
   row-gap: 1.5rem;
 }
+.gap-x-4{
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.gap-y-2{
+  row-gap: 0.5rem;
+}
 .gap-x-0{
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -3108,10 +3115,6 @@ select{
 .gap-x-3{
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
-}
-.gap-x-4{
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
 }
 .gap-x-5{
   -moz-column-gap: 1.25rem;
@@ -3174,9 +3177,6 @@ select{
 }
 .gap-y-1{
   row-gap: 0.25rem;
-}
-.gap-y-2{
-  row-gap: 0.5rem;
 }
 .gap-y-3{
   row-gap: 0.75rem;
@@ -7910,6 +7910,9 @@ input[type=number] {
   }
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sm\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .sm\:items-center{
     align-items: center;

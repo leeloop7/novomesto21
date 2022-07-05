@@ -10,16 +10,11 @@
     <h2 class="mt-10 sm:mt-16 mb-4 sm:mb-8 text-3xl md:text-4xl font-bold text-white text-center">{{ trans:checkout.list_of_all }}</h2>
     <div>
       <div class="sm:hidden">
-        <label for="tabs" class="sr-only">Select a tab</label>
         <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-        <select id="tabs" name="tabs" class="block w-full focus:ring-green-500 focus:border-green-500 border-gray-300 rounded-md">
-          <option selected>My Account</option>
-
-          <option>Company</option>
-
-          <option>Team Members</option>
-
-          <option>Billing</option>
+        <select x-model="variant" class="block w-full focus:ring-green-500 focus:border-green-500 border-gray-800 rounded-md bg-gray-800">
+          <option value="6.5km" selected>Rekreativni tek - 6.5km</option>
+          <option value="10km">Rekreativni tek - 10km</option>
+          <option value="Polmaraton">Polmaraton</option>
         </select>
       </div>
       <div class="hidden sm:block">
@@ -44,24 +39,24 @@
       </div>
     </div>
     <div class="mt-4 sm:mt-8">
-        <div class="grid grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '6.5km'" x-cloak>
-          {{ collection:orders }}
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '6.5km'" x-cloak>
+          {{ collection:orders orderBy (customer:last_name 'asc') }}
             {{ if items.0:variant:variant == "6.5km" }}
-              <div>{{ increment from="1" }}. {{ customer:first_name | title }} {{ customer:last_name | title }}</div>
+              <div>{{ increment from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
             {{ /if }}
           {{ /collection:orders }}
         </div>
-        <div class="grid grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '10km'" x-cloak>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '10km'" x-cloak>
           {{ collection:orders }}
             {{ if items.0:variant:variant == "10km" }}
-              <div>{{ increment:two from="1" }}. {{ customer:first_name | title }} {{ customer:last_name | title }}</div>
+              <div>{{ increment:two from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
             {{ /if }}
           {{ /collection:orders }}
         </div>
-        <div class="grid grid-cols-4 gap-x-4 gap-y-2" x-show="variant == 'Polmaraton'" x-cloak>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2" x-show="variant == 'Polmaraton'" x-cloak>
           {{ collection:orders }}
             {{ if items.0:variant:variant == "Polmaraton" }}
-              <div>{{ increment:three from="1" }}. {{ customer:first_name | title }} {{ customer:last_name | title }}</div>
+              <div>{{ increment:three from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
             {{ /if }}
           {{ /collection:orders }}
         </div>

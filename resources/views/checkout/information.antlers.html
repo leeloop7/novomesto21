@@ -300,20 +300,23 @@
                                   <table class="min-w-full">
                                     <thead class="bg-gray-700 border-b border-gray-700">
                                       <tr class="">
+                                        <th scope="col" class="p-2.5  text-left text-sm font-semibold text-white sm:pl-4">{{ trans:checkout.length }}</th>
                                         <th scope="col" class="p-2.5  text-left text-sm font-semibold text-white sm:pl-4">{{ trans:checkout.name }}</th>
                                         <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.surname }}</th>
                                         <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.shirt_size }}</th>
                                         <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.phone }}</th>
                                         <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.birthyear }}</th>
                                         <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.gender }}</th>
-                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.best_time_short :race="items.0:variant:variant" }}</th>
+                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.best_time_short }}</th>
                                         <th scope="col" class="p-2.5  text-left text-sm font-semibold text-white sm:pr-4">{{ trans:checkout.veterans }}</th>
                                       </tr>
                                     </thead>
                                     <tbody class="bg-gray-800">
-                                      {{ loop :times="items.0:quantity" }}
-                                      {{ partial:checkout.table-row :items="items" :index="index" }}
-                                      {{ /loop }}
+                                      {{ items }}
+                                        {{ loop :times="quantity" }}
+                                          {{ partial:checkout.table-row :variant="variant:key" index="{increment}" }}
+                                        {{ /loop }}
+                                      {{ /items }}
                                     </tbody>
                                   </table>
                                 </div>
@@ -398,7 +401,11 @@
             </div>
           </div>
           <div class="py-6">
-            <button type="submit" class="w-full bg-green-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">{{ trans:checkout.pay }}</button>
+            {{ if items.0:product:group && {sc:cart:quantityTotal} < 10 }}
+              <button type="submit" disabled class="w-full bg-green-600 disabled:bg-gray-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">{{ trans:checkout.pay }}</button>
+            {{ else }}
+              <button type="submit" class="w-full bg-green-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">{{ trans:checkout.pay }}</button>
+            {{ /if }}
           </div>
         </div>
         {{ /sc:cart:update }}
@@ -450,6 +457,7 @@
                   </div>
                 </div>
               {{ else }}
+              {{ if !items.0:product:group }}
               {{ sc:coupon:redeem }}
               <div class="w-full">
                 <label for="coupon" class="block text-sm font-medium text-gray-200">{{ trans:checkout.coupon }}</label>
@@ -464,12 +472,27 @@
               </div>
               {{ /sc:coupon:redeem }}
               {{ /if }}
+              {{ /if }}
               <div class="flex items-center justify-between">
                 <dt class="text-base text-white font-medium">{{ trans:checkout.total }}</dt>
                 <dd class="text-base font-medium text-white">{{ sc:cart:total }}</dd>
               </div>
             </dl>
           </div>
+          {{ if items.0:product:group && {sc:cart:quantityTotal} < 10 }}
+            <div class="rounded-md bg-yellow-100 p-4 my-6">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-sm font-medium text-yellow-800">{{ trans:checkout.warning }}</h3>
+                    </div>
+                </div>
+            </div>
+        {{ /if }}
         </div>
         {{ /sc:cart }}
       </div>

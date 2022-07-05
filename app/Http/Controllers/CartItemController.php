@@ -28,8 +28,17 @@ class CartItemController extends BaseActionController
     {
         $cart = $this->hasCart() ? $this->getCart() : $this->makeCart();
         $product = Product::find($request->product);
-        $cart->clearLineItems();
         $items = $cart->lineItems();
+
+        if(str_contains($product->get("slug"), "individual")) {
+          $cart->clearLineItems();
+        } else {
+          foreach($items as $item) {
+            if(str_contains($item->product()->get("slug"), "individual")) {
+              $cart->removeLineItem($item->id);
+            }
+          }
+        }
 
         // Handle customer stuff..
         if ($request->has('customer')) {

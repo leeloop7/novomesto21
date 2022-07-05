@@ -21,9 +21,12 @@
             </div>
         </div>
     {{ /if }}
+    {{ if group }}
+    <h2 class="text-lg leading-6 font-medium text-gray-100 text-center mt-10 sm:mt-16">{{ trans:checkout.group_info }}</h2>
+    {{ /if }}
     <div class="mt-10 sm:mt-16 space-y-4 sm:space-y-0 sm:grid grid-cols-2 gap-6 lg:max-w-6xl lg:mx-auto lg:grid-cols-3">
         {{ product_variants:options }}
-        {{ sc:cart:addItem redirect="{ link id='f0069f0b-5b9c-4b7f-88db-723ee3f36dab' }" }}
+          {{ sc:cart:addItem redirect="{ link id='f0069f0b-5b9c-4b7f-88db-723ee3f36dab' }" }}
           <input type="hidden" name="product" value="{{ id }}">
           {{ if !group }}
           <input type="hidden" name="quantity" value="1">
@@ -42,13 +45,13 @@
                       <div class="w-1/2">
                           <label for="quantity" class="block text-sm font-medium text-gray-100">{{ trans:checkout.number_of_people }}</label>
                           <select id="quantity" name="quantity" class="bg-gray-800 mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-700 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md">
-                              {{ loop from="10" to="25" }}
+                              {{ loop from="2" to="25" }}
                               <option value="{{ value }}">{{ value }}</option>
                               {{ /loop }}
                           </select>
                       </div>
                       {{ /if }}
-                      <button type="submit" class="mt-6 block w-full bg-gray-200 text-gray-900 border border-gray-800 rounded-md py-2 text-sm font-semibold text-center hover:bg-white">{{ trans:checkout.register }}</button>
+                      <button type="submit" class="mt-6 block w-full bg-gray-200 text-gray-900 border border-gray-800 rounded-md py-2 text-sm font-semibold text-center hover:bg-white">{{ trans:checkout.add_to_cart }}</button>
                   </div>
                 </div>
           </div>

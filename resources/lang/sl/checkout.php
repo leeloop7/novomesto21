@@ -48,7 +48,7 @@ return [
     'competitors' => 'Tekmovalci',
     'carrier' => 'Podatki o nosilcu prijave',
     'veterans' => 'DP Veteranov',
-    'best_time_short' => 'Najboljši čas (:race)',
+    'best_time_short' => 'Najboljši čas',
     'confirm' => 'Zapri',
     'finish_and_pay' => 'Zaključi in plačaj (:amount)',
     'Individualna prijava' => 'Individualna prijava',
@@ -61,5 +61,10 @@ return [
     'coupon' => 'Koda za popust',
     'apply_coupon' => 'Unovči kodo',
     'nothing_to_pay' => 'Plačilo ni potrebno',
-    'list_of_participants' => 'Seznam prijavljenih tekmovalcev'
+    'list_of_participants' => 'Seznam prijavljenih tekmovalcev',
+    'add_to_cart' => 'Dodaj v košarico',
+    'group_info' => 'Za skupinsko prijavo v košarico dodajte št. oseb za vsako posamezno razdaljo.',
+    'length' => 'Dolžina',
+    'warning' => 'Za skupinsko prijavo mora biti dodanih vsaj 10 tekmovalcev'
+
 ];

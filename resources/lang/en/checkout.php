@@ -48,7 +48,7 @@ return [
     'competitors' => 'Competitors',
     'carrier' => 'Registration holder info',
     'veterans' => 'Veteran NC',
-    'best_time_short' => 'Best time (:race)',
+    'best_time_short' => 'Best time',
     'confirm' => 'Close',
     'finish_and_pay' => 'Finish and pay (:amount)',
     'Individualna prijava' => 'Individual registration',
@@ -60,5 +60,9 @@ return [
     'coupon_discount' => 'Coupon discount',
     'coupon' => 'Discount coupon',
     'apply_coupon' => 'Apply coupon',
-    'nothing_to_pay' => 'You have nothing to pay'
+    'nothing_to_pay' => 'You have nothing to pay',
+    'add_to_cart' => 'Add to cart',
+    'group_info' => 'For group registration add to cart the number of competitors for each race length.',
+    'length' => 'Length',
+    'warning' => 'There needs to be at least 10 competitors for a group registration'
 ];

@@ -1,4 +1,4 @@
-<div class="max-w-7xl mx-auto py-8 px-8">
+<div class="max-w-7xl mx-auto py-8 px-8" x-data="{ variant: '6.5km' }">
     <h2 class="text-4xl md:text-5xl font-bold text-gray-600 text-center">{{ title }}</h2>
     <div class="mt-10 sm:mt-16 relative justify-center rounded-lg flex space-x-4">
         {{ collection:products sort="order" }}
@@ -6,5 +6,64 @@
             <h2 class="text-base md:text-xl leading-6 font-medium text-white">{{ title }}</h2>
         </a>
         {{ /collection:products }}
+    </div>
+    <h2 class="mt-10 sm:mt-16 mb-4 sm:mb-8 text-3xl md:text-4xl font-bold text-white text-center">{{ trans:checkout.list_of_all }}</h2>
+    <div>
+      <div class="sm:hidden">
+        <label for="tabs" class="sr-only">Select a tab</label>
+        <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+        <select id="tabs" name="tabs" class="block w-full focus:ring-green-500 focus:border-green-500 border-gray-300 rounded-md">
+          <option selected>My Account</option>
+
+          <option>Company</option>
+
+          <option>Team Members</option>
+
+          <option>Billing</option>
+        </select>
+      </div>
+      <div class="hidden sm:block">
+        <nav class="relative z-0 rounded-lg shadow flex divide-x divide-gray-600" aria-label="Tabs">
+          <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-500" -->
+          <a @click="variant = '6.5km'" href="#" class="text-white rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10" aria-current="page">
+            <span>Rekreativni tek - 6.5km</span>
+            <span aria-hidden="true" :class="{ 'bg-green-500': variant === '6.5km' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+          </a>
+
+          <a @click="variant = '10km'" href="#" class="text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+            <span>Rekreativni tek - 10km</span>
+            <span aria-hidden="true" :class="{ 'bg-green-500': variant === '10km' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+          </a>
+
+          <a @click="variant = 'Polmaraton'" href="#" class="text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+            <span>Polmaraton</span>
+            <span aria-hidden="true" :class="{ 'bg-green-500': variant === 'Polmaraton' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+          </a>
+
+        </nav>
+      </div>
+    </div>
+    <div class="mt-4 sm:mt-8">
+        <div class="grid grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '6.5km'" x-cloak>
+          {{ collection:orders }}
+            {{ if items.0:variant:variant == "6.5km" }}
+              <div>{{ increment from="1" }}. {{ customer:first_name | title }} {{ customer:last_name | title }}</div>
+            {{ /if }}
+          {{ /collection:orders }}
+        </div>
+        <div class="grid grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '10km'" x-cloak>
+          {{ collection:orders }}
+            {{ if items.0:variant:variant == "10km" }}
+              <div>{{ increment:two from="1" }}. {{ customer:first_name | title }} {{ customer:last_name | title }}</div>
+            {{ /if }}
+          {{ /collection:orders }}
+        </div>
+        <div class="grid grid-cols-4 gap-x-4 gap-y-2" x-show="variant == 'Polmaraton'" x-cloak>
+          {{ collection:orders }}
+            {{ if items.0:variant:variant == "Polmaraton" }}
+              <div>{{ increment:three from="1" }}. {{ customer:first_name | title }} {{ customer:last_name | title }}</div>
+            {{ /if }}
+          {{ /collection:orders }}
+        </div>
     </div>
 </div>

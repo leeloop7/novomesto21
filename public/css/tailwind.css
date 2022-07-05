@@ -1038,6 +1038,10 @@ select{
   margin-left: -1rem;
   margin-right: -1rem;
 }
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1045,10 +1049,6 @@ select{
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
-}
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 .my-0{
   margin-top: 0px;
@@ -1886,6 +1886,9 @@ select{
 .h-14{
   height: 3.5rem;
 }
+.h-0\.5{
+  height: 0.125rem;
+}
 .h-0{
   height: 0px;
 }
@@ -2027,6 +2030,9 @@ select{
 .min-w-0{
   min-width: 0px;
 }
+.min-w-\[120px\]{
+  min-width: 120px;
+}
 .min-w-\[150px\]{
   min-width: 150px;
 }
@@ -2037,9 +2043,6 @@ select{
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-.min-w-\[120px\]{
-  min-width: 120px;
 }
 .max-w-7xl{
   max-width: 80rem;
@@ -3675,6 +3678,10 @@ select{
   --tw-divide-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-divide-opacity));
 }
+.divide-gray-600 > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-divide-opacity));
+}
 .divide-transparent > :not([hidden]) ~ :not([hidden]){
   border-color: transparent;
 }
@@ -3704,10 +3711,6 @@ select{
 .divide-gray-500 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-divide-opacity));
-}
-.divide-gray-600 > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-divide-opacity));
 }
 .divide-gray-800 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
@@ -4215,6 +4218,10 @@ select{
 .rounded-sm{
   border-radius: 0.125rem;
 }
+.rounded-l-lg{
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
 .rounded-t-none{
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4289,10 +4296,6 @@ select{
 }
 .rounded-b-lg{
   border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-.rounded-l-lg{
-  border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
 .rounded-t-full{
@@ -4893,6 +4896,10 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
+.bg-yellow-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4998,10 +5005,6 @@ select{
 .bg-orange-900{
   --tw-bg-opacity: 1;
   background-color: rgb(124 45 18 / var(--tw-bg-opacity));
-}
-.bg-yellow-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 .bg-yellow-200{
   --tw-bg-opacity: 1;
@@ -7074,6 +7077,14 @@ select{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
+.text-yellow-400{
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+.text-yellow-800{
+  --tw-text-opacity: 1;
+  color: rgb(133 77 14 / var(--tw-text-opacity));
+}
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -7168,10 +7179,6 @@ select{
   --tw-text-opacity: 1;
   color: rgb(253 224 71 / var(--tw-text-opacity));
 }
-.text-yellow-400{
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
-}
 .text-yellow-500{
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
@@ -7183,10 +7190,6 @@ select{
 .text-yellow-700{
   --tw-text-opacity: 1;
   color: rgb(161 98 7 / var(--tw-text-opacity));
-}
-.text-yellow-800{
-  --tw-text-opacity: 1;
-  color: rgb(133 77 14 / var(--tw-text-opacity));
 }
 .text-yellow-900{
   --tw-text-opacity: 1;
@@ -7749,6 +7752,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+[x-cloak] {
+  display: none;
+}
 .focus-within\:z-10:focus-within{
   z-index: 10;
 }
@@ -7799,6 +7805,9 @@ input[type=number] {
 .hover\:text-green-600:hover{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+.focus\:z-10:focus{
+  z-index: 10;
 }
 .focus\:border-green-500:focus{
   --tw-border-opacity: 1;
@@ -7872,11 +7881,23 @@ input[type=number] {
   .sm\:mt-16{
     margin-top: 4rem;
   }
+  .sm\:mb-8{
+    margin-bottom: 2rem;
+  }
+  .sm\:mt-8{
+    margin-top: 2rem;
+  }
+  .sm\:block{
+    display: block;
+  }
   .sm\:flex{
     display: flex;
   }
   .sm\:grid{
     display: grid;
+  }
+  .sm\:hidden{
+    display: none;
   }
   .sm\:h-auto{
     height: auto;
@@ -8065,6 +8086,10 @@ input[type=number] {
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 @media (min-width: 1024px){

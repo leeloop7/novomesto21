@@ -65,6 +65,6 @@ return [
     'add_to_cart' => 'Dodaj v košarico',
     'group_info' => 'Za skupinsko prijavo v košarico dodajte št. oseb za vsako posamezno razdaljo.',
     'length' => 'Dolžina',
-    'warning' => 'Za skupinsko prijavo mora biti dodanih vsaj 10 tekmovalcev'
-
+    'warning' => 'Za skupinsko prijavo mora biti dodanih vsaj 10 tekmovalcev',
+    'list_of_all' => 'Seznam vseh prijavljenih'
 ];

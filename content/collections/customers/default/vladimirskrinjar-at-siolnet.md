@@ -7,4 +7,5 @@ email: vladimir.skrinjar@siol.net
 title: 'Vladimir Škrinjar'
 orders:
   - 2c5e71b3-847f-4970-8613-73dd38ea17b2
+  - 1ff3bcc1-6644-4f51-bd18-76cac95c387d
 ---

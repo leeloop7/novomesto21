@@ -39,26 +39,26 @@
       </div>
     </div>
     <div class="mt-4 sm:mt-8">
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '6.5km'" x-cloak>
-          {{ collection:orders orderBy (customer:last_name 'asc') }}
+        <div x-show="variant == '6.5km'" x-cloak>
+          {{ orders }}
             {{ if items.0:variant:variant == "6.5km" }}
               <div>{{ increment from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
             {{ /if }}
-          {{ /collection:orders }}
+          {{ /orders }}
         </div>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2" x-show="variant == '10km'" x-cloak>
-          {{ collection:orders }}
+        <div x-show="variant == '10km'" x-cloak>
+          {{ orders }}
             {{ if items.0:variant:variant == "10km" }}
               <div>{{ increment:two from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
             {{ /if }}
-          {{ /collection:orders }}
+          {{ /orders }}
         </div>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-2" x-show="variant == 'Polmaraton'" x-cloak>
-          {{ collection:orders }}
+        <div x-show="variant == 'Polmaraton'" x-cloak>
+          {{ orders }}
             {{ if items.0:variant:variant == "Polmaraton" }}
               <div>{{ increment:three from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
             {{ /if }}
-          {{ /collection:orders }}
+          {{ /orders }}
         </div>
     </div>
 </div>

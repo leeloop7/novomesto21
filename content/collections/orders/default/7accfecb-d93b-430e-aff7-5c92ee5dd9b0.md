@@ -3,6 +3,7 @@ id: 7accfecb-d93b-430e-aff7-5c92ee5dd9b0
 published: false
 blueprint: order
 order_number: 353
+title: 'ROZI FLISAR'
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -25,5 +26,5 @@ items_total: 2800
 tax_total: 0
 shipping_total: 0
 coupon_total: 0
-title: ' '
+customer: 37d3f855-5072-4f07-a0e2-de9d4e99d971
 ---

@@ -6,6 +6,17 @@ order_number: 353
 is_paid: false
 is_shipped: false
 is_refunded: false
+items:
+  -
+    id: a0dca9bc-17c6-49e7-985a-d4fe73ef4b73
+    product: 66e767a9-ee34-4dc4-8681-d09bb59f0cf5
+    variant:
+      variant: 10km
+      product: 66e767a9-ee34-4dc4-8681-d09bb59f0cf5
+    quantity: 1
+    total: 0
+    tax: null
+    metadata: {  }
 grand_total: 0
 items_total: 0
 tax_total: 0

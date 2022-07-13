@@ -18,8 +18,8 @@ contact_phone: '051  345 927'
 terms_and_conditions: true
 gdpr: true
 stripe:
-  intent: pi_3LL0ppBuFvIeTKRH1Q6AO5fo
-  client_secret: pi_3LL0ppBuFvIeTKRH1Q6AO5fo_secret_cDmnyxAHLYYDclix0w7xBE4ha
+  intent: pi_3LL0sSBuFvIeTKRH3koujUXb
+  client_secret: pi_3LL0sSBuFvIeTKRH3koujUXb_secret_Dm2dil23ajV73tQ9jPfOcZ8Hp
 is_paid: false
 is_shipped: false
 is_refunded: false

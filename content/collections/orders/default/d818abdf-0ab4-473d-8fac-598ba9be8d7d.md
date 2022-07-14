@@ -6,6 +6,17 @@ order_number: 386
 is_paid: false
 is_shipped: false
 is_refunded: false
+items:
+  -
+    id: cbc5119f-4dc5-4316-baa3-998b67d6d568
+    product: 66e767a9-ee34-4dc4-8681-d09bb59f0cf5
+    variant:
+      variant: 10km
+      product: 66e767a9-ee34-4dc4-8681-d09bb59f0cf5
+    quantity: 1
+    total: 0
+    tax: null
+    metadata: {  }
 grand_total: 0
 items_total: 0
 tax_total: 0

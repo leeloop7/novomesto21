@@ -20,11 +20,7 @@ stripe:
   intent: pi_3LLVkeBuFvIeTKRH0tr6Vgeg
   client_secret: pi_3LLVkeBuFvIeTKRH0tr6Vgeg_secret_tgeg4OqLeoViXDzMUChvBU62S
 published: true
-grand_total: 2800
-items_total: 2800
-shipping_total: 0
-tax_total: 0
-coupon_total: 0
+paid_date: '2022-07-14 17:25'
 is_paid: true
 is_shipped: false
 is_refunded: false
@@ -42,6 +38,38 @@ items:
       rate: 0
       price_includes_tax: true
     metadata: {  }
+grand_total: 2800
+items_total: 2800
+tax_total: 0
+shipping_total: 0
+coupon_total: 0
 customer: f06ffde8-0e14-4a24-87db-6b4a464c1dab
-paid_date: '2022-07-14 17:25'
+gateway:
+  use: DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\StripeGateway
+  data:
+    id: pm_1LLVm6BuFvIeTKRHnE0tr3xU
+    object: payment_method
+    card:
+      brand: mastercard
+      checks:
+        address_line1_check: null
+        address_postal_code_check: null
+        cvc_check: pass
+      country: SI
+      exp_month: 9
+      exp_year: 2025
+      fingerprint: FWEPuSf1Xsfr9uzC
+      funding: credit
+      generated_from: null
+      last4: '6607'
+      networks:
+        available:
+          - mastercard
+        preferred: null
+      three_d_secure_usage:
+        supported: true
+      wallet: null
+    customer: cus_M3d0MJMcpcexcX
+    livemode: true
+    payment_intent: pi_3LLVkeBuFvIeTKRH0tr6Vgeg
 ---

@@ -1,6 +1,5 @@
 ---
 id: d818abdf-0ab4-473d-8fac-598ba9be8d7d
-published: false
 blueprint: order
 order_number: 386
 title: 'Sara Aljančič'
@@ -20,12 +19,13 @@ gdpr: true
 stripe:
   intent: pi_3LLVkeBuFvIeTKRH0tr6Vgeg
   client_secret: pi_3LLVkeBuFvIeTKRH0tr6Vgeg_secret_tgeg4OqLeoViXDzMUChvBU62S
+published: true
 grand_total: 2800
 items_total: 2800
 shipping_total: 0
 tax_total: 0
 coupon_total: 0
-is_paid: false
+is_paid: true
 is_shipped: false
 is_refunded: false
 items:
@@ -43,4 +43,5 @@ items:
       price_includes_tax: true
     metadata: {  }
 customer: f06ffde8-0e14-4a24-87db-6b4a464c1dab
+paid_date: '2022-07-14 17:25'
 ---

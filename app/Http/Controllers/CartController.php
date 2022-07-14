@@ -44,7 +44,7 @@ class CartController extends BaseActionController
 
         if($request->get('competitors')) {
             $competitors = array_map(fn($item) => ['cells' => array_values($item)], $request->get('competitors'));
-            array_unshift($competitors, ['cells' => ['Name', 'Surname', 'Shirt size', 'Phone number', 'Birthyear', 'Gender', 'Best time', 'DP Vet' ]]);
+            array_unshift($competitors, ['cells' => ['Name', 'Surname', 'Shirt size', 'Phone number', 'Birthyear', 'Gender', 'Best time', 'DP Vet', 'Dolžina' ]]);
             $data['competitors'] = $competitors;
         }
 

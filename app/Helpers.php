@@ -27,6 +27,6 @@ function tag(string $name, array $params = [])
 
 function orders_count(string $type)
 {
-    return tag("collection:orders", ['locale' => 'default'])
-        ->sum(fn($order) => isset($order->items[0]) && $order->items[0]["variant"]["variant"] === $type ? $order->items[0]["quantity"] : 0);
+    return tag("registrations")
+        ->sum(fn($registration) => $registration["length"] == $type ? 1 : 0);
 }

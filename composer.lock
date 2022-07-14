@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5804cfb389e7f107b3bcf1811c2bed31",
+    "content-hash": "50a161b8db14209484df69d7a0e55585",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -339,16 +339,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.3.7",
+            "version": "2.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "10cd375cf85dede2ff417ceab517ef9a0dc55407"
+                "reference": "ebac357c0a41359f3981098729042ed6dedc97ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/10cd375cf85dede2ff417ceab517ef9a0dc55407",
-                "reference": "10cd375cf85dede2ff417ceab517ef9a0dc55407",
+                "url": "https://api.github.com/repos/composer/composer/zipball/ebac357c0a41359f3981098729042ed6dedc97ba",
+                "reference": "ebac357c0a41359f3981098729042ed6dedc97ba",
                 "shasum": ""
             },
             "require": {
@@ -429,7 +429,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.3.7"
+                "source": "https://github.com/composer/composer/tree/2.3.10"
             },
             "funding": [
                 {
@@ -445,7 +445,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-06T14:43:28+00:00"
+            "time": "2022-07-13T13:48:23+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -1127,16 +1127,16 @@
         },
         {
             "name": "doublethreedigital/simple-commerce",
-            "version": "v3.2.11",
+            "version": "v3.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/simple-commerce.git",
-                "reference": "3671bf84fe5e442fd5320fa26746de9d1447e01d"
+                "reference": "300ef90e1613c4ecd2aa9d4375550762fbd4954b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/3671bf84fe5e442fd5320fa26746de9d1447e01d",
-                "reference": "3671bf84fe5e442fd5320fa26746de9d1447e01d",
+                "url": "https://api.github.com/repos/doublethreedigital/simple-commerce/zipball/300ef90e1613c4ecd2aa9d4375550762fbd4954b",
+                "reference": "300ef90e1613c4ecd2aa9d4375550762fbd4954b",
                 "shasum": ""
             },
             "require": {
@@ -1186,9 +1186,9 @@
             "description": "A perfectly simple e-commerce addon for Statamic",
             "support": {
                 "issues": "https://github.com/doublethreedigital/simple-commerce/issues",
-                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v3.2.11"
+                "source": "https://github.com/doublethreedigital/simple-commerce/tree/v3.2.12"
             },
-            "time": "2022-06-20T20:23:41+00:00"
+            "time": "2022-07-08T21:06:21+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -5917,16 +5917,16 @@
         },
         {
             "name": "spatie/statamic-responsive-images",
-            "version": "v2.12.3",
+            "version": "v2.12.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/statamic-responsive-images.git",
-                "reference": "da412346649351a1065abeeec9a914173bf76408"
+                "reference": "ad0e209c574a77981f598696f275b451022362ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/statamic-responsive-images/zipball/da412346649351a1065abeeec9a914173bf76408",
-                "reference": "da412346649351a1065abeeec9a914173bf76408",
+                "url": "https://api.github.com/repos/spatie/statamic-responsive-images/zipball/ad0e209c574a77981f598696f275b451022362ea",
+                "reference": "ad0e209c574a77981f598696f275b451022362ea",
                 "shasum": ""
             },
             "require": {
@@ -5961,22 +5961,22 @@
             "description": "Responsive Images for Statamic 3",
             "support": {
                 "issues": "https://github.com/spatie/statamic-responsive-images/issues",
-                "source": "https://github.com/spatie/statamic-responsive-images/tree/v2.12.3"
+                "source": "https://github.com/spatie/statamic-responsive-images/tree/v2.12.4"
             },
-            "time": "2022-05-25T08:09:36+00:00"
+            "time": "2022-07-04T07:26:58+00:00"
         },
         {
             "name": "statamic/cms",
-            "version": "v3.3.16",
+            "version": "v3.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "c9ed596c46a96d54ebb5d8b4852c9a182d9b29dc"
+                "reference": "b7de86426e777ac44e1baba35b9b7869ea13b2a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/c9ed596c46a96d54ebb5d8b4852c9a182d9b29dc",
-                "reference": "c9ed596c46a96d54ebb5d8b4852c9a182d9b29dc",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/b7de86426e777ac44e1baba35b9b7869ea13b2a7",
+                "reference": "b7de86426e777ac44e1baba35b9b7869ea13b2a7",
                 "shasum": ""
             },
             "require": {
@@ -6054,7 +6054,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.3.16"
+                "source": "https://github.com/statamic/cms/tree/v3.3.20"
             },
             "funding": [
                 {
@@ -6062,7 +6062,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-13T21:19:21+00:00"
+            "time": "2022-07-13T18:51:20+00:00"
         },
         {
             "name": "statamic/stringy",

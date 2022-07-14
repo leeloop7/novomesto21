@@ -3,7 +3,7 @@ id: d818abdf-0ab4-473d-8fac-598ba9be8d7d
 published: false
 blueprint: order
 order_number: 386
-title: ' '
+title: 'Sara Aljančič'
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -26,4 +26,5 @@ items_total: 2800
 tax_total: 0
 shipping_total: 0
 coupon_total: 0
+customer: f06ffde8-0e14-4a24-87db-6b4a464c1dab
 ---

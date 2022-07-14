@@ -17,6 +17,9 @@ contact_name: 'Sara Aljančič'
 contact_phone: '041203620'
 terms_and_conditions: true
 gdpr: true
+stripe:
+  intent: pi_3LLVkeBuFvIeTKRH0tr6Vgeg
+  client_secret: pi_3LLVkeBuFvIeTKRH0tr6Vgeg_secret_tgeg4OqLeoViXDzMUChvBU62S
 is_paid: false
 is_shipped: false
 is_refunded: false

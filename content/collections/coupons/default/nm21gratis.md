@@ -1,0 +1,10 @@
+---
+id: 91729f20-0564-4d04-b6fc-c5c17af6af9a
+blueprint: coupon
+title: NM21GRATIS
+type: percentage
+coupon_value: '100'
+redeemed: 0
+updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
+updated_at: 1657802297
+---

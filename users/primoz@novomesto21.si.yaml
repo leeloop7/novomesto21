@@ -27,7 +27,7 @@ preferences:
         - gender
         - site
         - grand_total
-      after_save: continue_editing
+      after_save: create_another
     customers:
       columns:
         - last_name

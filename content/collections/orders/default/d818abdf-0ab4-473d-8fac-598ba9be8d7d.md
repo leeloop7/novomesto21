@@ -4,6 +4,19 @@ published: false
 blueprint: order
 order_number: 386
 title: 'Sara Aljančič'
+country: SI
+address: 'Loka 63'
+zip: '4290'
+city: Tržič
+phone: '041203620'
+gender: female
+birthyear: '2010'
+shirt_size: m
+best_time: '45:00 - 53:59'
+contact_name: 'Sara Aljančič'
+contact_phone: '041203620'
+terms_and_conditions: true
+gdpr: true
 is_paid: false
 is_shipped: false
 is_refunded: false

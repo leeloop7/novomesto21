@@ -7,31 +7,31 @@
         </a>
         {{ /collection:products }}
     </div>
-    <h2 class="mt-10 sm:mt-16 mb-4 sm:mb-8 text-3xl md:text-4xl font-bold text-white text-center">{{ trans:checkout.list_of_all }}</h2>
+    <h2 class="mt-10 sm:mt-16 mb-4 sm:mb-8 text-3xl md:text-4xl font-bold text-gray-400 text-center">{{ trans:checkout.list_of_all }}</h2>
     <div>
       <div class="sm:hidden">
         <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
         <select x-model="variant" class="block w-full focus:ring-green-500 focus:border-green-500 border-gray-800 rounded-md bg-gray-800">
-          <option value="6.5km" selected>Rekreativni tek - 6.5km</option>
-          <option value="10km">Rekreativni tek - 10km</option>
-          <option value="Polmaraton">Polmaraton</option>
+          <option value="6.5km" selected>{{ trans:checkout.recreational_run }} - 6.5km</option>
+          <option value="10km">{{ trans:checkout.recreational_run }} - 10km</option>
+          <option value="Polmaraton">{{ trans:checkout.Polmaraton }}</option>
         </select>
       </div>
       <div class="hidden sm:block">
         <nav class="relative z-0 rounded-lg shadow flex divide-x divide-gray-600" aria-label="Tabs">
           <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-500" -->
           <a @click="variant = '6.5km'" href="#" class="text-white rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10" aria-current="page">
-            <span>Rekreativni tek - 6.5km</span>
+            <span>{{ trans:checkout.recreational_run }} - 6.5km</span>
             <span aria-hidden="true" :class="{ 'bg-green-500': variant === '6.5km' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
           </a>
 
           <a @click="variant = '10km'" href="#" class="text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
-            <span>Rekreativni tek - 10km</span>
+            <span>{{ trans:checkout.recreational_run }} - 10km</span>
             <span aria-hidden="true" :class="{ 'bg-green-500': variant === '10km' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
           </a>
 
           <a @click="variant = 'Polmaraton'" href="#" class="text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
-            <span>Polmaraton</span>
+            <span>{{ trans:checkout.Polmaraton }}</span>
             <span aria-hidden="true" :class="{ 'bg-green-500': variant === 'Polmaraton' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
           </a>
 
@@ -40,25 +40,25 @@
     </div>
     <div class="mt-4 sm:mt-8">
         <div x-show="variant == '6.5km'" x-cloak>
-          {{ orders }}
-            {{ if items.0:variant:variant == "6.5km" }}
-              <div>{{ increment from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
+          {{ registrations }}
+            {{ if length == "6.5km" }}
+              <div>{{ increment from="1" }}. {{ last_name | title }} {{ first_name | title }}</div>
             {{ /if }}
-          {{ /orders }}
+          {{ /registrations }}
         </div>
         <div x-show="variant == '10km'" x-cloak>
-          {{ orders }}
-            {{ if items.0:variant:variant == "10km" }}
-              <div>{{ increment:two from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
+          {{ registrations }}
+            {{ if length == "10km" }}
+              <div>{{ increment:one from="1" }}. {{ last_name | title }} {{ first_name | title }}</div>
             {{ /if }}
-          {{ /orders }}
+          {{ /registrations }}
         </div>
         <div x-show="variant == 'Polmaraton'" x-cloak>
-          {{ orders }}
-            {{ if items.0:variant:variant == "Polmaraton" }}
-              <div>{{ increment:three from="1" }}. {{ customer:last_name | title }} {{ customer:first_name | title }}</div>
+          {{ registrations }}
+            {{ if length == "Polmaraton" }}
+              <div>{{ increment:two from="1" }}. {{ last_name | title }} {{ first_name | title }}</div>
             {{ /if }}
-          {{ /orders }}
+          {{ /registrations }}
         </div>
     </div>
 </div>

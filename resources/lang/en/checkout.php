@@ -53,6 +53,7 @@ return [
     'finish_and_pay' => 'Finish and pay (:amount)',
     'Individualna prijava' => 'Individual registration',
     'Skupinska prijava' => 'Group registration',
+    'recreational_run' => 'Recreational run',
     '6.5km' => '6.5km',
     '10km' => '10km',
     'Polmaraton' => 'Halfmarathon',
@@ -65,5 +66,5 @@ return [
     'group_info' => 'For group registration add to cart the number of competitors for each race length.',
     'length' => 'Length',
     'warning' => 'There needs to be at least 10 competitors for a group registration',
-    'list_of_all' => 'List of all registrations'
+    'list_of_all' => 'List of registrations'
 ];

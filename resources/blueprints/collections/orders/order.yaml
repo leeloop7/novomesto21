@@ -190,7 +190,6 @@ sections:
           min_rows: 1
           add_row: 'Add Line Item'
           instructions_position: above
-          max_rows: 1
           read_only: false
       -
         handle: birthyear

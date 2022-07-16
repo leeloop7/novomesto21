@@ -189,7 +189,7 @@ class CartItemController extends BaseActionController
         }
 
         return $this->withSuccess($request, [
-            'message' => __('simple-commerce.messages.cart_item_added'),
+            'success' => true,
             'cart'    => $cart->fresh()->toResource(),
         ]);
     }

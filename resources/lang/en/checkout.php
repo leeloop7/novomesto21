@@ -66,5 +66,9 @@ return [
     'group_info' => 'For group registration add to cart the number of competitors for each race length.',
     'length' => 'Length',
     'warning' => 'There needs to be at least 10 competitors for a group registration',
-    'list_of_all' => 'List of registrations'
+    'list_of_all' => 'List of registrations',
+    'added_short' => 'Added to cart',
+    'added_long' => 'The item was added to the cart',
+    'view_cart' => 'View cart',
+    'continue' => 'Continue with registrations'
 ];

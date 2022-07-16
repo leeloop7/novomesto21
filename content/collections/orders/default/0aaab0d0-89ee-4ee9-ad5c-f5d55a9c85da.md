@@ -16,14 +16,10 @@ email_notifications: true
 terms_and_conditions: true
 gdpr: true
 stripe:
-  intent: pi_3LM6yfBuFvIeTKRH0tlLCA7F
-  client_secret: pi_3LM6yfBuFvIeTKRH0tlLCA7F_secret_ypQH7W4qayhJa3va1Qf8VidxL
+  intent: pi_3LM74VBuFvIeTKRH1NANwHpf
+  client_secret: pi_3LM74VBuFvIeTKRH1NANwHpf_secret_4ZGJ96kh1gw4o7Sgh0pPLuoWW
+paid_date: '2022-07-16 09:13'
 published: true
-grand_total: 2500
-items_total: 2500
-shipping_total: 0
-tax_total: 0
-coupon_total: 0
 is_paid: true
 is_shipped: false
 is_refunded: false
@@ -41,6 +37,10 @@ items:
       rate: 0
       price_includes_tax: true
     metadata: {  }
+grand_total: 2500
+items_total: 2500
+tax_total: 0
+shipping_total: 0
+coupon_total: 0
 customer: 54f4a0e4-0935-4b48-88f8-f171e2660b3e
-paid_date: '2022-07-16 09:13'
 ---

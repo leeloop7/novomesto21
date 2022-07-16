@@ -22,7 +22,9 @@ return [
      * The handles of the field types that should be skipped when exporting.
      * If you need finer-grained control of this create a custom exporter.
      */
-    'excluded_field_types' => ['section', 'hidden'],
+    'excluded_field_types' => [
+      'section', 'hidden', 'money', 'grid', 'table'
+    ],
 
     /**
      * The class responsible for converting the Entries into an array of values that get exported.
@@ -30,5 +32,5 @@ return [
      *
      * See also: https://docs.laravel-excel.com/3.1/exports
      */
-    'exporter' => \RoordaIct\EntriesExport\Exports\EntryCollectionExport::class,
+    'exporter' => \App\Exports\OrdersCollectionExport::class,
 ];

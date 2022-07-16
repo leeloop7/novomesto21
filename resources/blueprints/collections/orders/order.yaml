@@ -228,49 +228,45 @@ sections:
         field:
           type: money
           display: 'Items Total'
-          read_only: false
-          validate: required
+          read_only: true
+          validate:
+            - required
           instructions_position: above
           listable: false
           visibility: read_only
-          if:
-            name: 'equals x'
       -
         handle: shipping_total
         field:
           type: money
           display: 'Shipping Total'
-          read_only: false
-          validate: required
+          read_only: true
+          validate:
+            - required
           instructions_position: above
           listable: false
           visibility: read_only
-          if:
-            name: 'equals x'
       -
         handle: tax_total
         field:
           type: money
           display: 'Tax Total'
-          read_only: false
-          validate: required
+          read_only: true
+          validate:
+            - required
           instructions_position: above
           listable: false
           visibility: read_only
-          if:
-            name: 'equals x'
       -
         handle: coupon_total
         field:
           type: money
           display: 'Coupon Total'
-          read_only: false
-          validate: required
+          read_only: true
+          validate:
+            - required
           instructions_position: above
           listable: false
           visibility: read_only
-          if:
-            name: 'equals x'
       -
         handle: email_notifications
         field:

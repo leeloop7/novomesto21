@@ -15,9 +15,6 @@ shirt_size: xs
 email_notifications: true
 terms_and_conditions: true
 gdpr: true
-stripe:
-  intent: pi_3LM74VBuFvIeTKRH1NANwHpf
-  client_secret: pi_3LM74VBuFvIeTKRH1NANwHpf_secret_4ZGJ96kh1gw4o7Sgh0pPLuoWW
 paid_date: '2022-07-16 09:13'
 published: true
 is_paid: true

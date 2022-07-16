@@ -1,6 +1,5 @@
 ---
 id: 0aaab0d0-89ee-4ee9-ad5c-f5d55a9c85da
-published: false
 blueprint: order
 order_number: 426
 title: 'Nina Pečnik'
@@ -19,12 +18,13 @@ gdpr: true
 stripe:
   intent: pi_3LM6yfBuFvIeTKRH0tlLCA7F
   client_secret: pi_3LM6yfBuFvIeTKRH0tlLCA7F_secret_ypQH7W4qayhJa3va1Qf8VidxL
+published: true
 grand_total: 2500
 items_total: 2500
 shipping_total: 0
 tax_total: 0
 coupon_total: 0
-is_paid: false
+is_paid: true
 is_shipped: false
 is_refunded: false
 items:
@@ -42,4 +42,5 @@ items:
       price_includes_tax: true
     metadata: {  }
 customer: 54f4a0e4-0935-4b48-88f8-f171e2660b3e
+paid_date: '2022-07-16 09:13'
 ---

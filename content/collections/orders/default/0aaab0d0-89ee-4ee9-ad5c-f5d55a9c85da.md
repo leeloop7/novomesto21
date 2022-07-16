@@ -16,6 +16,9 @@ shirt_size: xs
 email_notifications: true
 terms_and_conditions: true
 gdpr: true
+stripe:
+  intent: pi_3LM6yfBuFvIeTKRH0tlLCA7F
+  client_secret: pi_3LM6yfBuFvIeTKRH0tlLCA7F_secret_ypQH7W4qayhJa3va1Qf8VidxL
 is_paid: false
 is_shipped: false
 is_refunded: false

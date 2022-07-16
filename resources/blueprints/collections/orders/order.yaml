@@ -16,7 +16,6 @@ sections:
           listable: hidden
           instructions_position: above
           max_items: 1
-          read_only: false
       -
         handle: gender
         field:
@@ -48,9 +47,9 @@ sections:
           listable: hidden
           input_type: text
           antlers: false
-          read_only: true
           width: 50
           instructions_position: above
+          visibility: read_only
       -
         handle: phone
         field:
@@ -190,7 +189,6 @@ sections:
           min_rows: 1
           add_row: 'Add Line Item'
           instructions_position: above
-          read_only: false
       -
         handle: birthyear
         field:
@@ -230,11 +228,11 @@ sections:
         field:
           type: money
           display: 'Items Total'
-          read_only: true
-          validate:
-            - required
+          read_only: false
+          validate: required
           instructions_position: above
           listable: false
+          visibility: read_only
           if:
             name: 'equals x'
       -
@@ -242,11 +240,11 @@ sections:
         field:
           type: money
           display: 'Shipping Total'
-          read_only: true
-          validate:
-            - required
+          read_only: false
+          validate: required
           instructions_position: above
           listable: false
+          visibility: read_only
           if:
             name: 'equals x'
       -
@@ -254,11 +252,11 @@ sections:
         field:
           type: money
           display: 'Tax Total'
-          read_only: true
-          validate:
-            - required
+          read_only: false
+          validate: required
           instructions_position: above
           listable: false
+          visibility: read_only
           if:
             name: 'equals x'
       -
@@ -266,11 +264,11 @@ sections:
         field:
           type: money
           display: 'Coupon Total'
-          read_only: true
-          validate:
-            - required
+          read_only: false
+          validate: required
           instructions_position: above
           listable: false
+          visibility: read_only
           if:
             name: 'equals x'
       -
@@ -404,8 +402,8 @@ sections:
           listable: hidden
           display: 'Paid Date'
           validate: required
-          read_only: true
           width: 50
+          visibility: read_only
       -
         handle: grand_total
         field:
@@ -415,6 +413,7 @@ sections:
           validate: required
           width: 33
           listable: hidden
+          visibility: read_only
       -
         handle: is_paid
         field:
@@ -422,9 +421,9 @@ sections:
           listable: true
           display: 'Is Paid?'
           width: 50
-          read_only: true
           instructions_position: above
           default: false
+          visibility: read_only
   contacts:
     display: Contacts
     fields:
@@ -463,7 +462,7 @@ sections:
           listable: false
           validate:
             - required
-          read_only: true
+          visibility: read_only
       -
         handle: footnote
         field:

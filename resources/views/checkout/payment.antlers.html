@@ -16,16 +16,16 @@
       </div>
 
       {{ sc:gateways }}
-          <div class="my-4" x-show="gateway === '{{ formatted_class }}'">
+          <div class="my-4" x-show="gateway === '{{ formatted_class }}'" x-cloak>
               {{ partial src="checkout/gateways/{ handle }" }}
           </div>
       {{ /sc:gateways }}
-  </div>
-  <div class="w-full">
-      <button type="submit"
-          class="w-full bg-green-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">
-            {{ trans:checkout.finish_and_pay amount="{sc:cart:total}" }}
-      </button>
+      <div class="w-full" x-show="gateway.includes('Stripe')">
+        <button type="submit"
+            class="w-full bg-green-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">
+              {{ trans:checkout.finish_and_pay amount="{sc:cart:total}" }}
+        </button>
+    </div>
   </div>
   {{ /sc:checkout }}
 </div>

@@ -50,6 +50,12 @@ return [
             'key' => env('STRIPE_KEY'),
             'secret' => env('STRIPE_SECRET'),
         ],
+        \DoubleThreeDigital\SimpleCommerce\Gateways\Builtin\PayPalGateway::class => [
+          'client_id' => env('PAYPAL_CLIENT_ID'),
+          'client_secret' => env('PAYPAL_CLIENT_SECRET'),
+          'environment' => env('PAYPAL_ENVIRONMENT', 'production'),
+          'mode' => 'onsite'
+      ],
     ],
 
     /*

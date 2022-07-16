@@ -91,32 +91,20 @@ class CartController extends BaseActionController
         }
 
         if (isset($data['email'])) {
-            try {
-                if (isset($data['email']) && $data['email'] !== null) {
-                    $customer = Customer::findByEmail($data['email']);
-                } else {
-                    throw new CustomerNotFound("Customer with ID [{$data['customer']}] could not be found.");
-                }
-            } catch (CustomerNotFound $e) {
-                $customerData = [
-                    'published' => true,
-                ];
-
-                if (isset($data['name'])) {
-                    $customerData['name'] = $data['name'];
-                }
-
-                if (isset($data['first_name']) && isset($data['last_name'])) {
-                    $customerData['first_name'] = $data['first_name'];
-                    $customerData['last_name'] = $data['last_name'];
-                }
-
-                $customer = Customer::make()
-                    ->email($data['email'])
-                    ->data($customerData);
-
-                $customer->save();
+            $customerData = [
+                'published' => true,
+            ];
+            if (isset($data['name'])) {
+                $customerData['name'] = $data['name'];
             }
+            if (isset($data['first_name']) && isset($data['last_name'])) {
+                $customerData['first_name'] = $data['first_name'];
+                $customerData['last_name'] = $data['last_name'];
+            }
+            $customer = Customer::make()
+                ->email($data['email'])
+                ->data($customerData);
+            $customer->save();
 
             $cart->customer($customer->id());
             $cart->save();

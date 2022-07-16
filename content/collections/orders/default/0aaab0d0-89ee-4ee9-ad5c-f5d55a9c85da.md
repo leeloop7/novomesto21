@@ -4,6 +4,18 @@ published: false
 blueprint: order
 order_number: 426
 title: 'Nina Pečnik'
+country: SI
+address: 'Breška vas 1'
+zip: '8310'
+city: Šentjernej
+phone: '069 625 406'
+club: 'AK Krka'
+gender: female
+birthyear: '2005'
+shirt_size: xs
+email_notifications: true
+terms_and_conditions: true
+gdpr: true
 is_paid: false
 is_shipped: false
 is_refunded: false

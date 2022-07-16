@@ -30,7 +30,9 @@ class Registrations extends Tags
       foreach($entries as $entry) {
         if ($entry->competitors) {
           foreach(collect($entry->competitors) as $c) {
-            $competitors->push(["first_name" => $c["cells"][0], "last_name" => $c["cells"][1], "length" => $c["cells"][8]]);
+            if(isset($c["cells"][8])) {
+              $competitors->push(["first_name" => $c["cells"][0], "last_name" => $c["cells"][1], "length" => $c["cells"][8]]);
+            }
           }
         }
       }

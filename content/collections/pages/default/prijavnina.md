@@ -5,7 +5,7 @@ title: PRIJAVNINA
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1648373098
+updated_at: 1658051820
 bard_field:
   -
     type: paragraph
@@ -1393,7 +1393,7 @@ bard_field:
             type: bold
       -
         type: text
-        text: 'Za skupinsko prijavo šteje prijava najmanj 10-ih tekačev ne glede na razdaljo, ki jo tečejo (6,5km, 10km, ali 21km). Vsaka 11 prijava je brezplačna. Skupinska prijave je možna do 15. 9. 2022. Po tem datumu je možna le še posamična prijava.'
+        text: 'Za skupinsko prijavo šteje prijava najmanj 10-ih tekačev ne glede na razdaljo, ki jo tečejo (6,5km, 10km, ali 21km). Skupinska prijave je možna do 15. 9. 2022. Po tem datumu je možna le še posamična prijava.'
   -
     type: paragraph
     content:
@@ -1424,6 +1424,5 @@ bard_field:
       -
         type: text
         text: 'Vračilo prijavnine je možno z zdravniškim potrdilom do 15.9 2022 ter ob plačilu administrativnih stroškov v višini 10 eur. Po tem datumu prijavnin ne vračamo. Prijavnin zaradi neudeležbe ne vračamo!'
-featured_image:
-  - Novomeski_polmaraton_2021_Lo_res_030.JPG
+featured_image: Novomeski_polmaraton_2021_Lo_res_030.JPG
 ---

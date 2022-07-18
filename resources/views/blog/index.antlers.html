@@ -6,7 +6,7 @@
     {{ collection:blog  sort="date:desc" }}
     <a href="{{ url }}"
        class="group">
-      <img src="{{ featured_image }}" class="aspect-video rounded-md opacity-75 group-hover:opacity-100 transition-all w-full h-64 duration-300 mb-2" />
+      {{ responsive:featured_image webp="true" avif="false" ratio="16/9" }}
       <span class="text-green-600 text-sm transition-all duration-300 group-hover:text-green-500">{{ date }}</span><br>
       <h2 class="font-bold text-base transition-all duration-300 text-gray-300 group-hover:text-white">{{ title }}</h2>
       <div class="text-sm leading-6 mt-2 transition-all duration-300 text-gray-300 group-hover:text-white">{{ intro }}</div>

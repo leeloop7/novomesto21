@@ -51,7 +51,6 @@ sections:
           icon: product_variants
           listable: hidden
           instructions_position: above
-          localizable: true
   sidebar:
     display: Sidebar
     fields:

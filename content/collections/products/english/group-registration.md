@@ -14,15 +14,15 @@ product_variants:
     -
       key: 6.5km
       variant: 6.5km
-      price: 1800
+      price: 2000
     -
       key: 10km
       variant: 10km
-      price: 2000
+      price: 2500
     -
       key: Polmaraton
       variant: Polmaraton
-      price: 2500
+      price: 2800
 updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
 updated_at: 1651774868
 ---

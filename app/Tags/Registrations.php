@@ -23,7 +23,7 @@ class Registrations extends Tags
 
       // Filter only individual entries and map to normalize
       $competitors = $entries->filter(function($c) { return !$c->competitors; })->map(function ($c) {
-        return [ "first_name" => $c->customer->first_name, "last_name" => $c->customer->last_name, "length" => $c->items[0]->variant["variant"] ];
+        return [ "first_name" => $c->customer?->first_name, "last_name" => $c->customer?->last_name, "length" => $c->items[0]?->variant["variant"] ];
       });
 
       // Loop through group entries and add to normalized collection

@@ -1,6 +1,5 @@
 ---
 id: bf7ecabf-4bbf-4b6c-af5c-3595b9c953d3
-published: false
 blueprint: order
 order_number: 454
 title: 'Žan Luka Kobe'
@@ -19,12 +18,13 @@ email_notifications: true
 sms_notifications: true
 terms_and_conditions: true
 gdpr: true
+published: true
 grand_total: 0
 items_total: 2500
 shipping_total: 0
 tax_total: 0
 coupon_total: 2500
-is_paid: false
+is_paid: true
 is_shipped: false
 is_refunded: false
 items:
@@ -43,4 +43,5 @@ items:
     metadata: {  }
 customer: 99c76deb-767e-46d7-a3cc-d41e92aae4aa
 coupon: 91729f20-0564-4d04-b6fc-c5c17af6af9a
+paid_date: '2022-07-20 08:19'
 ---

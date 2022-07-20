@@ -19,6 +19,11 @@ email_notifications: true
 sms_notifications: true
 terms_and_conditions: true
 gdpr: true
+grand_total: 0
+items_total: 2500
+shipping_total: 0
+tax_total: 0
+coupon_total: 2500
 is_paid: false
 is_shipped: false
 is_refunded: false
@@ -36,11 +41,6 @@ items:
       rate: 0
       price_includes_tax: true
     metadata: {  }
-grand_total: 0
-items_total: 2500
-tax_total: 0
-shipping_total: 0
-coupon_total: 2500
 customer: 99c76deb-767e-46d7-a3cc-d41e92aae4aa
 coupon: 91729f20-0564-4d04-b6fc-c5c17af6af9a
 ---

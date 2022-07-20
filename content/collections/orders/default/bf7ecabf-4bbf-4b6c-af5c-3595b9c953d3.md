@@ -4,6 +4,21 @@ published: false
 blueprint: order
 order_number: 454
 title: 'Žan Luka Kobe'
+country: SI
+address: 'Potov Vrh'
+zip: 5b
+city: 'Novo mesto'
+phone: '040268542'
+club: 'Fit klub Novo mesto'
+gender: male
+birthyear: '2011'
+shirt_size: xs
+contact_name: 'Nina Kobe'
+contact_phone: '031254700'
+email_notifications: true
+sms_notifications: true
+terms_and_conditions: true
+gdpr: true
 is_paid: false
 is_shipped: false
 is_refunded: false
